@@ -41,3 +41,10 @@ Continue Power BI POC build:
 1. Import `Power BI/covid-compliance-audit-theme.json` into `Covid POC.pbip`.
 2. Build Executive Overview page from `semantic.vw_powerbi_poc_dataset`, `semantic.vw_trust_gate_status`, and `semantic.vw_metric_contracts`.
 3. Validate report measures against SQL evidence exports.
+
+## Git Publish State
+
+- Local Git repo initialized on `main`.
+- Initial commit: `f7d4e2b`.
+- Remote push pending until GitHub repo `COVID-Fabric-Compliance` exists and an authenticated path is available.
+- Raw Bronze CSV files and Power BI cache are intentionally ignored to avoid GitHub large-file rejection.
