@@ -52,6 +52,11 @@ table 'semantic vw_trust_gate_status'
 
 		annotation SummarizationSetBy = Automatic
 
+	measure 'Rows Under Trust Gates' = SUM ( 'semantic vw_trust_gate_status'[row_count] )
+		formatString: #,##0
+		displayFolder: Executive POC
+		lineageTag: 0db6a27a-60d0-4c11-81b9-dcce65b3a737
+
 	partition 'semantic vw_trust_gate_status' = m
 		mode: import
 		source =

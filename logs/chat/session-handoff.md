@@ -48,3 +48,11 @@ Continue Power BI POC build:
 - Initial commit: `f7d4e2b`.
 - Remote push pending until GitHub repo `COVID-Fabric-Compliance` exists and an authenticated path is available.
 - Raw Bronze CSV files and Power BI cache are intentionally ignored to avoid GitHub large-file rejection.
+
+## Power BI POC Report State
+
+- Page 1 built: `Executive Compliance Overview`.
+- Validation command: `pbir validate Power BI\Covid POC.Report --fields --qa`.
+- Latest validation passed with no warnings.
+- Added explicit measures in TMDL for report visuals.
+- Next recommended page: `Data Trust & Audit`.

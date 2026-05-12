@@ -127,6 +127,21 @@ table 'semantic vw_powerbi_poc_dataset'
 
 		annotation SummarizationSetBy = Automatic
 
+	measure 'Total New Confirmed' = SUM ( 'semantic vw_powerbi_poc_dataset'[NewConfirmed] )
+		formatString: #,##0
+		displayFolder: Executive POC
+		lineageTag: 1f72ddcc-3f12-4b41-b51a-588ab6aa4d54
+
+	measure 'Total New Deceased' = SUM ( 'semantic vw_powerbi_poc_dataset'[NewDeceased] )
+		formatString: #,##0
+		displayFolder: Executive POC
+		lineageTag: f3ce2605-e3f1-468b-8d9d-6a19b3a26a1f
+
+	measure 'Current Hospitalized Total' = SUM ( 'semantic vw_powerbi_poc_dataset'[CurrentHospitalized] )
+		formatString: #,##0
+		displayFolder: Executive POC
+		lineageTag: 4d7f0c27-e493-4f75-861b-91961dc168b3
+
 	partition 'semantic vw_powerbi_poc_dataset' = m
 		mode: import
 		source =

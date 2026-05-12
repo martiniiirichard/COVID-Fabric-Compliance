@@ -1,0 +1,102 @@
+{
+  "name": "table_metric_contracts",
+  "visual": {
+    "visualType": "tableEx",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "queryRef": "semantic vw_metric_contracts.metric_name",
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "semantic vw_metric_contracts"
+                    }
+                  },
+                  "Property": "metric_name"
+                }
+              },
+              "nativeQueryRef": "metric_name"
+            },
+            {
+              "queryRef": "semantic vw_metric_contracts.grain",
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "semantic vw_metric_contracts"
+                    }
+                  },
+                  "Property": "grain"
+                }
+              },
+              "nativeQueryRef": "grain"
+            },
+            {
+              "queryRef": "semantic vw_metric_contracts.certification_state",
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "semantic vw_metric_contracts"
+                    }
+                  },
+                  "Property": "certification_state"
+                }
+              },
+              "nativeQueryRef": "certification_state"
+            }
+          ]
+        }
+      }
+    },
+    "objects": {},
+    "drillFilterOtherVisuals": true,
+    "visualContainerObjects": {
+      "title": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Metric Contracts'"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "subTitle": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  },
+  "position": {
+    "x": 760,
+    "y": 504,
+    "width": 488,
+    "height": 200,
+    "z": 0,
+    "tabOrder": 0
+  },
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.7.0/schema.json"
+}
