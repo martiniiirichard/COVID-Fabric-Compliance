@@ -1,0 +1,1481 @@
+[
+  {
+    "table": "colleges.csv",
+    "rows_total_estimated": 1947,
+    "sample_rows_profiled": 1948,
+    "column_count": 9,
+    "numeric_column_count_sample": 3,
+    "top_null_columns_sample": [
+      {
+        "column": "notes",
+        "null_pct_sample": 98.15
+      },
+      {
+        "column": "cases_2021",
+        "null_pct_sample": 17.3
+      }
+    ],
+    "key_cardinality_sample": {
+      "state": 57,
+      "county": 737,
+      "ipeds_id": 1948
+    },
+    "date_profile_sample": {
+      "date": {
+        "valid_dates_sample": 1948,
+        "invalid_dates_sample": 0,
+        "min_sample": "2021-05-26",
+        "max_sample": "2021-05-26"
+      }
+    },
+    "numeric_profile_sample": {
+      "ipeds_id": {
+        "min_sample": 100654.0,
+        "mean_sample": 569778.338469,
+        "max_sample": 49005401.0,
+        "zeros_pct_sample": 0.0
+      },
+      "cases": {
+        "min_sample": 0.0,
+        "mean_sample": 363.538501,
+        "max_sample": 9914.0,
+        "zeros_pct_sample": 4.67
+      },
+      "cases_2021": {
+        "min_sample": 0.0,
+        "mean_sample": 168.111111,
+        "max_sample": 3158.0,
+        "zeros_pct_sample": 2.11
+      }
+    }
+  },
+  {
+    "table": "deaths.csv",
+    "rows_total_estimated": 7258,
+    "sample_rows_profiled": 7258,
+    "column_count": 12,
+    "numeric_column_count_sample": 5,
+    "top_null_columns_sample": [
+      {
+        "column": "placename",
+        "null_pct_sample": 94.83
+      },
+      {
+        "column": "expected_deaths",
+        "null_pct_sample": 82.53
+      },
+      {
+        "column": "excess_deaths",
+        "null_pct_sample": 82.53
+      },
+      {
+        "column": "baseline",
+        "null_pct_sample": 82.53
+      },
+      {
+        "column": "start_date",
+        "null_pct_sample": 10.58
+      }
+    ],
+    "key_cardinality_sample": {},
+    "date_profile_sample": {
+      "start_date": {
+        "valid_dates_sample": 6490,
+        "invalid_dates_sample": 0,
+        "min_sample": "2010-01-09",
+        "max_sample": "2020-12-23"
+      },
+      "end_date": {
+        "valid_dates_sample": 6490,
+        "invalid_dates_sample": 0,
+        "min_sample": "2010-01-15",
+        "max_sample": "2020-12-29"
+      },
+      "year": {
+        "valid_dates_sample": 6840,
+        "invalid_dates_sample": 418,
+        "min_sample": "2010-01-01",
+        "max_sample": "2020-01-01"
+      }
+    },
+    "numeric_profile_sample": {
+      "month": {
+        "min_sample": 1.0,
+        "mean_sample": 6.596445,
+        "max_sample": 12.0,
+        "zeros_pct_sample": 0.0
+      },
+      "week": {
+        "min_sample": 2.0,
+        "mean_sample": 26.769114,
+        "max_sample": 52.0,
+        "zeros_pct_sample": 0.0
+      },
+      "deaths": {
+        "min_sample": 455.0,
+        "mean_sample": 7968.235051,
+        "max_sample": 141292.0,
+        "zeros_pct_sample": 0.0
+      },
+      "expected_deaths": {
+        "min_sample": 548.0,
+        "mean_sample": 9237.088328,
+        "max_sample": 139343.0,
+        "zeros_pct_sample": 0.0
+      },
+      "excess_deaths": {
+        "min_sample": -6721.0,
+        "mean_sample": 1195.426656,
+        "max_sample": 30400.0,
+        "zeros_pct_sample": 0.24
+      }
+    }
+  },
+  {
+    "table": "demographics.csv",
+    "rows_total_estimated": 21689,
+    "sample_rows_profiled": 20001,
+    "column_count": 19,
+    "numeric_column_count_sample": 18,
+    "top_null_columns_sample": [
+      {
+        "column": "population_clustered",
+        "null_pct_sample": 99.43
+      },
+      {
+        "column": "population_largest_city",
+        "null_pct_sample": 99.28
+      },
+      {
+        "column": "population_rural",
+        "null_pct_sample": 99.0
+      },
+      {
+        "column": "population_urban",
+        "null_pct_sample": 99.0
+      },
+      {
+        "column": "population_density",
+        "null_pct_sample": 94.12
+      }
+    ],
+    "key_cardinality_sample": {},
+    "date_profile_sample": {},
+    "numeric_profile_sample": {
+      "population": {
+        "min_sample": 0.0,
+        "mean_sample": 772635.805996,
+        "max_sample": 1439323774.0,
+        "zeros_pct_sample": 0.01
+      },
+      "population_male": {
+        "min_sample": 8.0,
+        "mean_sample": 433091.302649,
+        "max_sample": 738247340.0,
+        "zeros_pct_sample": 0.0
+      },
+      "population_female": {
+        "min_sample": 17.0,
+        "mean_sample": 426528.290122,
+        "max_sample": 701076434.0,
+        "zeros_pct_sample": 0.0
+      },
+      "population_rural": {
+        "min_sample": 0.0,
+        "mean_sample": 16254266.4,
+        "max_sample": 895386226.0,
+        "zeros_pct_sample": 5.0
+      },
+      "population_urban": {
+        "min_sample": 5464.0,
+        "mean_sample": 20552983.985,
+        "max_sample": 842933962.0,
+        "zeros_pct_sample": 0.0
+      },
+      "population_largest_city": {
+        "min_sample": 342743.0,
+        "mean_sample": 4537732.854167,
+        "max_sample": 37435191.0,
+        "zeros_pct_sample": 0.0
+      },
+      "population_clustered": {
+        "min_sample": 1026758.0,
+        "mean_sample": 15435082.787611,
+        "max_sample": 398976116.0,
+        "zeros_pct_sample": 0.0
+      },
+      "population_density": {
+        "min_sample": 0.138,
+        "mean_sample": 670.291575,
+        "max_sample": 84383.0,
+        "zeros_pct_sample": 0.0
+      },
+      "human_development_index": {
+        "min_sample": 0.354,
+        "mean_sample": 0.694935,
+        "max_sample": 70.91,
+        "zeros_pct_sample": 0.0
+      },
+      "population_age_00_09": {
+        "min_sample": 0.0,
+        "mean_sample": 140463.720533,
+        "max_sample": 234861634.0,
+        "zeros_pct_sample": 0.01
+      },
+      "population_age_10_19": {
+        "min_sample": 0.0,
+        "mean_sample": 135611.047176,
+        "max_sample": 252201518.0,
+        "zeros_pct_sample": 0.01
+      },
+      "population_age_20_29": {
+        "min_sample": 1.0,
+        "mean_sample": 133052.708275,
+        "max_sample": 239902073.0,
+        "zeros_pct_sample": 0.0
+      }
+    }
+  },
+  {
+    "table": "economy.csv",
+    "rows_total_estimated": 404,
+    "sample_rows_profiled": 404,
+    "column_count": 4,
+    "numeric_column_count_sample": 3,
+    "top_null_columns_sample": [
+      {
+        "column": "human_capital_index",
+        "null_pct_sample": 61.39
+      },
+      {
+        "column": "gdp_per_capita_usd",
+        "null_pct_sample": 9.65
+      },
+      {
+        "column": "gdp_usd",
+        "null_pct_sample": 7.67
+      }
+    ],
+    "key_cardinality_sample": {},
+    "date_profile_sample": {},
+    "numeric_profile_sample": {
+      "gdp_usd": {
+        "min_sample": 31580.0,
+        "mean_sample": 515768862060.82306,
+        "max_sample": 21374418877706.0,
+        "zeros_pct_sample": 0.0
+      },
+      "gdp_per_capita_usd": {
+        "min_sample": 261.0,
+        "mean_sample": 33258.219178,
+        "max_sample": 2490617.0,
+        "zeros_pct_sample": 0.0
+      },
+      "human_capital_index": {
+        "min_sample": 0.293,
+        "mean_sample": 0.567212,
+        "max_sample": 0.884,
+        "zeros_pct_sample": 0.0
+      }
+    }
+  },
+  {
+    "table": "epidemiology.csv",
+    "rows_total_estimated": 12525825,
+    "sample_rows_profiled": 20001,
+    "column_count": 10,
+    "numeric_column_count_sample": 8,
+    "top_null_columns_sample": [
+      {
+        "column": "new_tested",
+        "null_pct_sample": 89.54
+      },
+      {
+        "column": "cumulative_tested",
+        "null_pct_sample": 89.07
+      },
+      {
+        "column": "new_recovered",
+        "null_pct_sample": 32.62
+      },
+      {
+        "column": "cumulative_recovered",
+        "null_pct_sample": 32.47
+      },
+      {
+        "column": "new_confirmed",
+        "null_pct_sample": 0.19
+      }
+    ],
+    "key_cardinality_sample": {},
+    "date_profile_sample": {
+      "date": {
+        "valid_dates_sample": 20000,
+        "invalid_dates_sample": 0,
+        "min_sample": "2020-01-01",
+        "max_sample": "2022-09-15"
+      }
+    },
+    "numeric_profile_sample": {
+      "new_confirmed": {
+        "min_sample": -28375.0,
+        "mean_sample": 99.740156,
+        "max_sample": 28385.0,
+        "zeros_pct_sample": 49.14
+      },
+      "new_deceased": {
+        "min_sample": -2038.0,
+        "mean_sample": 1.2647,
+        "max_sample": 2045.0,
+        "zeros_pct_sample": 76.74
+      },
+      "new_recovered": {
+        "min_sample": -26154.0,
+        "mean_sample": 10.366429,
+        "max_sample": 27401.0,
+        "zeros_pct_sample": 75.59
+      },
+      "new_tested": {
+        "min_sample": 1.0,
+        "mean_sample": 81984.492587,
+        "max_sample": 563330.0,
+        "zeros_pct_sample": 0.0
+      },
+      "cumulative_confirmed": {
+        "min_sample": 0.0,
+        "mean_sample": 40128.510402,
+        "max_sample": 1021191.0,
+        "zeros_pct_sample": 2.1
+      },
+      "cumulative_deceased": {
+        "min_sample": 0.0,
+        "mean_sample": 506.045361,
+        "max_sample": 7791.0,
+        "zeros_pct_sample": 10.04
+      },
+      "cumulative_recovered": {
+        "min_sample": 0.0,
+        "mean_sample": 2282.326175,
+        "max_sample": 56975.0,
+        "zeros_pct_sample": 5.0
+      },
+      "cumulative_tested": {
+        "min_sample": 6.0,
+        "mean_sample": 22988097.175206,
+        "max_sample": 168522672.0,
+        "zeros_pct_sample": 0.0
+      }
+    }
+  },
+  {
+    "table": "facilities.csv",
+    "rows_total_estimated": 2639,
+    "sample_rows_profiled": 2639,
+    "column_count": 16,
+    "numeric_column_count_sample": 9,
+    "top_null_columns_sample": [
+      {
+        "column": "note",
+        "null_pct_sample": 98.48
+      },
+      {
+        "column": "max_inmate_population_2020",
+        "null_pct_sample": 68.25
+      },
+      {
+        "column": "latest_inmate_population",
+        "null_pct_sample": 39.64
+      },
+      {
+        "column": "facility_city",
+        "null_pct_sample": 0.38
+      },
+      {
+        "column": "facility_state",
+        "null_pct_sample": 0.04
+      }
+    ],
+    "key_cardinality_sample": {
+      "nyt_id": 2638,
+      "facility_county": 956,
+      "facility_county_fips": 1348,
+      "facility_state": 53
+    },
+    "date_profile_sample": {},
+    "numeric_profile_sample": {
+      "facility_county_fips": {
+        "min_sample": 1003.0,
+        "mean_sample": 29186.422887,
+        "max_sample": 72061.0,
+        "zeros_pct_sample": 0.0
+      },
+      "facility_lng": {
+        "min_sample": -165.4125694,
+        "mean_sample": -91.193161,
+        "max_sample": -66.112209,
+        "zeros_pct_sample": 0.0
+      },
+      "facility_lat": {
+        "min_sample": 18.4231353,
+        "mean_sample": 37.280626,
+        "max_sample": 64.8333367,
+        "zeros_pct_sample": 0.0
+      },
+      "latest_inmate_population": {
+        "min_sample": 1.0,
+        "mean_sample": 822.386692,
+        "max_sample": 8616.0,
+        "zeros_pct_sample": 0.0
+      },
+      "max_inmate_population_2020": {
+        "min_sample": 27.0,
+        "mean_sample": 1269.529833,
+        "max_sample": 6150.0,
+        "zeros_pct_sample": 0.0
+      },
+      "total_inmate_cases": {
+        "min_sample": 0.0,
+        "mean_sample": 199.431603,
+        "max_sample": 12290.0,
+        "zeros_pct_sample": 9.51
+      },
+      "total_inmate_deaths": {
+        "min_sample": 0.0,
+        "mean_sample": 0.983327,
+        "max_sample": 45.0,
+        "zeros_pct_sample": 75.07
+      },
+      "total_officer_cases": {
+        "min_sample": 0.0,
+        "mean_sample": 42.561955,
+        "max_sample": 1718.0,
+        "zeros_pct_sample": 31.83
+      },
+      "total_officer_deaths": {
+        "min_sample": 0.0,
+        "mean_sample": 0.083776,
+        "max_sample": 6.0,
+        "zeros_pct_sample": 93.4
+      }
+    }
+  },
+  {
+    "table": "facility-boundary-us-all.csv",
+    "rows_total_estimated": 353020,
+    "sample_rows_profiled": 20001,
+    "column_count": 15,
+    "numeric_column_count_sample": 4,
+    "top_null_columns_sample": [
+      {
+        "column": "facility_name",
+        "null_pct_sample": 0.0
+      }
+    ],
+    "key_cardinality_sample": {
+      "facility_place_id": 5000,
+      "facility_provider_id": 5000,
+      "facility_region_place_id": 2223
+    },
+    "date_profile_sample": {},
+    "numeric_profile_sample": {
+      "facility_latitude": {
+        "min_sample": 17.974,
+        "mean_sample": 37.248019,
+        "max_sample": 63.3365,
+        "zeros_pct_sample": 0.0
+      },
+      "facility_longitude": {
+        "min_sample": -159.469,
+        "mean_sample": -90.535433,
+        "max_sample": -65.6425,
+        "zeros_pct_sample": 0.0
+      },
+      "facility_sub_region_2_code": {
+        "min_sample": 1001.0,
+        "mean_sample": 28150.45285,
+        "max_sample": 72153.0,
+        "zeros_pct_sample": 0.0
+      },
+      "travel_time_threshold_minutes": {
+        "min_sample": 15.0,
+        "mean_sample": 15.0,
+        "max_sample": 15.0,
+        "zeros_pct_sample": 0.0
+      }
+    }
+  },
+  {
+    "table": "geography.csv",
+    "rows_total_estimated": 22130,
+    "sample_rows_profiled": 20001,
+    "column_count": 8,
+    "numeric_column_count_sample": 7,
+    "top_null_columns_sample": [
+      {
+        "column": "area_rural_sq_km",
+        "null_pct_sample": 99.15
+      },
+      {
+        "column": "area_urban_sq_km",
+        "null_pct_sample": 99.15
+      },
+      {
+        "column": "openstreetmap_id",
+        "null_pct_sample": 29.49
+      },
+      {
+        "column": "elevation_m",
+        "null_pct_sample": 20.23
+      },
+      {
+        "column": "area_sq_km",
+        "null_pct_sample": 13.4
+      }
+    ],
+    "key_cardinality_sample": {
+      "openstreetmap_id": 5000
+    },
+    "date_profile_sample": {},
+    "numeric_profile_sample": {
+      "openstreetmap_id": {
+        "min_sample": 7374.0,
+        "mean_sample": 1126501.498972,
+        "max_sample": 264158895.0,
+        "zeros_pct_sample": 0.0
+      },
+      "latitude": {
+        "min_sample": -90.0,
+        "mean_sample": 9.331244,
+        "max_sample": 78.635166,
+        "zeros_pct_sample": 0.01
+      },
+      "longitude": {
+        "min_sample": -174.810278,
+        "mean_sample": -32.035085,
+        "max_sample": 178.005556,
+        "zeros_pct_sample": 0.02
+      },
+      "elevation_m": {
+        "min_sample": -373.0,
+        "mean_sample": 794.728828,
+        "max_sample": 6229.0,
+        "zeros_pct_sample": 0.35
+      },
+      "area_sq_km": {
+        "min_sample": 0.0,
+        "mean_sample": 224225.849711,
+        "max_sample": 940000000.0,
+        "zeros_pct_sample": 0.21
+      },
+      "area_rural_sq_km": {
+        "min_sample": 0.0,
+        "mean_sample": 650505.147929,
+        "max_sample": 16305829.0,
+        "zeros_pct_sample": 0.59
+      },
+      "area_urban_sq_km": {
+        "min_sample": 0.0,
+        "mean_sample": 20774.798817,
+        "max_sample": 802053.0,
+        "zeros_pct_sample": 1.78
+      }
+    }
+  },
+  {
+    "table": "google-search-trends.csv",
+    "rows_total_estimated": 2713929,
+    "sample_rows_profiled": 20001,
+    "column_count": 424,
+    "numeric_column_count_sample": 421,
+    "top_null_columns_sample": [
+      {
+        "column": "search_trends_generalized_tonic\u2013clonic_seizure",
+        "null_pct_sample": 100.0
+      },
+      {
+        "column": "search_trends_photodermatitis",
+        "null_pct_sample": 75.22
+      },
+      {
+        "column": "search_trends_viral_pneumonia",
+        "null_pct_sample": 73.61
+      },
+      {
+        "column": "search_trends_burning_chest_pain",
+        "null_pct_sample": 65.52
+      },
+      {
+        "column": "search_trends_hypercapnia",
+        "null_pct_sample": 65.5
+      }
+    ],
+    "key_cardinality_sample": {
+      "search_trends_avoidant_personality_disorder": 140,
+      "search_trends_candidiasis": 530,
+      "search_trends_diabetic_ketoacidosis": 102,
+      "search_trends_epidermoid_cyst": 107,
+      "search_trends_hemorrhoids": 335,
+      "search_trends_hyperemesis_gravidarum": 95,
+      "search_trends_hyperhidrosis": 184,
+      "search_trends_hyperlipidemia": 96,
+      "search_trends_hyperthyroidism": 310,
+      "search_trends_hypertriglyceridemia": 82,
+      "search_trends_hypothyroidism": 368,
+      "search_trends_kidney_failure": 370,
+      "search_trends_kidney_stone": 259,
+      "search_trends_middle_back_pain": 115,
+      "search_trends_oral_candidiasis": 201,
+      "search_trends_stridor": 92,
+      "search_trends_suicidal_ideation": 146,
+      "search_trends_thyroid_nodule": 78
+    },
+    "date_profile_sample": {
+      "date": {
+        "valid_dates_sample": 20000,
+        "invalid_dates_sample": 0,
+        "min_sample": "2020-01-01",
+        "max_sample": "2022-09-12"
+      }
+    },
+    "numeric_profile_sample": {
+      "search_trends_abdominal_obesity": {
+        "min_sample": 0.81,
+        "mean_sample": 2.730613,
+        "max_sample": 9.35,
+        "zeros_pct_sample": 0.0
+      },
+      "search_trends_abdominal_pain": {
+        "min_sample": 1.77,
+        "mean_sample": 5.230867,
+        "max_sample": 16.9,
+        "zeros_pct_sample": 0.0
+      },
+      "search_trends_acne": {
+        "min_sample": 2.4,
+        "mean_sample": 9.282402,
+        "max_sample": 32.49,
+        "zeros_pct_sample": 0.0
+      },
+      "search_trends_actinic_keratosis": {
+        "min_sample": 0.07,
+        "mean_sample": 0.478499,
+        "max_sample": 3.71,
+        "zeros_pct_sample": 0.0
+      },
+      "search_trends_acute_bronchitis": {
+        "min_sample": 0.06,
+        "mean_sample": 0.413719,
+        "max_sample": 3.19,
+        "zeros_pct_sample": 0.0
+      },
+      "search_trends_adrenal_crisis": {
+        "min_sample": 0.04,
+        "mean_sample": 0.165155,
+        "max_sample": 2.61,
+        "zeros_pct_sample": 0.0
+      },
+      "search_trends_ageusia": {
+        "min_sample": 0.03,
+        "mean_sample": 0.122135,
+        "max_sample": 2.56,
+        "zeros_pct_sample": 0.0
+      },
+      "search_trends_alcoholism": {
+        "min_sample": 1.78,
+        "mean_sample": 4.662258,
+        "max_sample": 15.14,
+        "zeros_pct_sample": 0.0
+      },
+      "search_trends_allergic_conjunctivitis": {
+        "min_sample": 0.03,
+        "mean_sample": 0.087923,
+        "max_sample": 3.13,
+        "zeros_pct_sample": 0.0
+      },
+      "search_trends_allergy": {
+        "min_sample": 3.03,
+        "mean_sample": 11.597812,
+        "max_sample": 35.15,
+        "zeros_pct_sample": 0.0
+      },
+      "search_trends_amblyopia": {
+        "min_sample": 0.09,
+        "mean_sample": 0.26757,
+        "max_sample": 2.99,
+        "zeros_pct_sample": 0.0
+      },
+      "search_trends_amenorrhea": {
+        "min_sample": 0.06,
+        "mean_sample": 0.202505,
+        "max_sample": 3.81,
+        "zeros_pct_sample": 0.0
+      }
+    }
+  },
+  {
+    "table": "health.csv",
+    "rows_total_estimated": 3504,
+    "sample_rows_profiled": 3504,
+    "column_count": 14,
+    "numeric_column_count_sample": 13,
+    "top_null_columns_sample": [
+      {
+        "column": "hospital_beds_per_1000",
+        "null_pct_sample": 99.29
+      },
+      {
+        "column": "smoking_prevalence",
+        "null_pct_sample": 95.83
+      },
+      {
+        "column": "physicians_per_1000",
+        "null_pct_sample": 95.32
+      },
+      {
+        "column": "nurses_per_1000",
+        "null_pct_sample": 94.86
+      },
+      {
+        "column": "pollution_mortality_rate",
+        "null_pct_sample": 94.78
+      }
+    ],
+    "key_cardinality_sample": {
+      "comorbidity_mortality_rate": 128
+    },
+    "date_profile_sample": {},
+    "numeric_profile_sample": {
+      "life_expectancy": {
+        "min_sample": 52.805,
+        "mean_sample": 77.823519,
+        "max_sample": 401.307595,
+        "zeros_pct_sample": 0.0
+      },
+      "smoking_prevalence": {
+        "min_sample": 2.0,
+        "mean_sample": 21.632877,
+        "max_sample": 47.0,
+        "zeros_pct_sample": 0.0
+      },
+      "diabetes_prevalence": {
+        "min_sample": 1.0,
+        "mean_sample": 8.360287,
+        "max_sample": 30.5,
+        "zeros_pct_sample": 0.0
+      },
+      "infant_mortality_rate": {
+        "min_sample": 1.4,
+        "mean_sample": 21.384974,
+        "max_sample": 84.5,
+        "zeros_pct_sample": 0.0
+      },
+      "adult_male_mortality_rate": {
+        "min_sample": 41.498,
+        "mean_sample": 185.241931,
+        "max_sample": 545.675,
+        "zeros_pct_sample": 0.0
+      },
+      "adult_female_mortality_rate": {
+        "min_sample": 24.487,
+        "mean_sample": 122.430323,
+        "max_sample": 419.363,
+        "zeros_pct_sample": 0.0
+      },
+      "pollution_mortality_rate": {
+        "min_sample": 7.0,
+        "mean_sample": 92.212568,
+        "max_sample": 324.1,
+        "zeros_pct_sample": 0.0
+      },
+      "comorbidity_mortality_rate": {
+        "min_sample": 7.8,
+        "mean_sample": 18.878142,
+        "max_sample": 30.6,
+        "zeros_pct_sample": 0.0
+      },
+      "hospital_beds_per_1000": {
+        "min_sample": 0.3,
+        "mean_sample": 3.028,
+        "max_sample": 11.5,
+        "zeros_pct_sample": 0.0
+      },
+      "nurses_per_1000": {
+        "min_sample": 0.0737,
+        "mean_sample": 4.393377,
+        "max_sample": 19.4614,
+        "zeros_pct_sample": 0.0
+      },
+      "physicians_per_1000": {
+        "min_sample": 0.014,
+        "mean_sample": 1.918615,
+        "max_sample": 8.4218,
+        "zeros_pct_sample": 0.0
+      },
+      "health_expenditure_usd": {
+        "min_sample": 19.431646,
+        "mean_sample": 1081.06939,
+        "max_sample": 10246.138672,
+        "zeros_pct_sample": 0.0
+      }
+    }
+  },
+  {
+    "table": "hospitalizations.csv",
+    "rows_total_estimated": 1768485,
+    "sample_rows_profiled": 20001,
+    "column_count": 11,
+    "numeric_column_count_sample": 4,
+    "top_null_columns_sample": [
+      {
+        "column": "current_hospitalized_patients",
+        "null_pct_sample": 100.0
+      },
+      {
+        "column": "current_intensive_care_patients",
+        "null_pct_sample": 100.0
+      },
+      {
+        "column": "new_ventilator_patients",
+        "null_pct_sample": 100.0
+      },
+      {
+        "column": "cumulative_ventilator_patients",
+        "null_pct_sample": 100.0
+      },
+      {
+        "column": "current_ventilator_patients",
+        "null_pct_sample": 100.0
+      }
+    ],
+    "key_cardinality_sample": {},
+    "date_profile_sample": {
+      "date": {
+        "valid_dates_sample": 20000,
+        "invalid_dates_sample": 0,
+        "min_sample": "0022-01-10",
+        "max_sample": "2022-06-04"
+      }
+    },
+    "numeric_profile_sample": {
+      "new_hospitalized_patients": {
+        "min_sample": 0.0,
+        "mean_sample": 38.0584,
+        "max_sample": 1333.0,
+        "zeros_pct_sample": 50.57
+      },
+      "cumulative_hospitalized_patients": {
+        "min_sample": 0.0,
+        "mean_sample": 18291.79635,
+        "max_sample": 481379.0,
+        "zeros_pct_sample": 0.78
+      },
+      "new_intensive_care_patients": {
+        "min_sample": 0.0,
+        "mean_sample": 6.2927,
+        "max_sample": 303.0,
+        "zeros_pct_sample": 72.81
+      },
+      "cumulative_intensive_care_patients": {
+        "min_sample": 0.0,
+        "mean_sample": 3023.9687,
+        "max_sample": 83630.0,
+        "zeros_pct_sample": 2.93
+      }
+    }
+  },
+  {
+    "table": "index.csv",
+    "rows_total_estimated": 22963,
+    "sample_rows_profiled": 20001,
+    "column_count": 15,
+    "numeric_column_count_sample": 1,
+    "top_null_columns_sample": [
+      {
+        "column": "locality_code",
+        "null_pct_sample": 99.85
+      },
+      {
+        "column": "locality_name",
+        "null_pct_sample": 99.85
+      },
+      {
+        "column": "datacommons_id",
+        "null_pct_sample": 93.21
+      },
+      {
+        "column": "subregion2_code",
+        "null_pct_sample": 7.97
+      },
+      {
+        "column": "subregion2_name",
+        "null_pct_sample": 7.97
+      }
+    ],
+    "key_cardinality_sample": {
+      "place_id": 5000,
+      "wikidata_id": 5000,
+      "datacommons_id": 1355
+    },
+    "date_profile_sample": {},
+    "numeric_profile_sample": {
+      "aggregation_level": {
+        "min_sample": 0.0,
+        "mean_sample": 1.9118,
+        "max_sample": 3.0,
+        "zeros_pct_sample": 1.15
+      }
+    }
+  },
+  {
+    "table": "lawatlas-emergency-declarations.csv",
+    "rows_total_estimated": 8364,
+    "sample_rows_profiled": 8364,
+    "column_count": 104,
+    "numeric_column_count_sample": 92,
+    "top_null_columns_sample": [
+      {
+        "column": "lawatlas_requirement_type_traveler_must_self_quarantine",
+        "null_pct_sample": 100.0
+      },
+      {
+        "column": "lawatlas_requirement_type_traveler_must_inform_others_of_travel",
+        "null_pct_sample": 100.0
+      },
+      {
+        "column": "lawatlas_requirement_type_checkpoints_must_be_established",
+        "null_pct_sample": 100.0
+      },
+      {
+        "column": "lawatlas_requirement_type_travel_requirement_must_be_posted",
+        "null_pct_sample": 100.0
+      },
+      {
+        "column": "lawatlas_business_type_all_non_essential_businesses",
+        "null_pct_sample": 100.0
+      }
+    ],
+    "key_cardinality_sample": {
+      "lawatlas_state_emergency": 2,
+      "lawatlas_emerg_statewide": 2,
+      "lawatlas_traveler_type_all_people_entering_the_state": 2,
+      "lawatlas_traveler_type_travelers_from_specified_states": 2,
+      "lawatlas_travel_statewide": 1,
+      "lawatlas_home_except_caring_for_a_person_outside_the_home": 2,
+      "lawatlas_home_except_caring_for_a_pet_outside_the_home": 2,
+      "lawatlas_home_statewide": 2,
+      "lawatlas_mask_statewide": 2,
+      "lawatlas_business_statewide": 2,
+      "lawatlas_rest_statewide": 2,
+      "lawatlas_schools_statewide": 2,
+      "lawatlas_gathering_statewide": 2,
+      "lawatlas_med_statewide": 2,
+      "lawatlas_correct_facility_all_state_facilities": 2,
+      "lawatlas_correct_facility_all_county_jails": 2,
+      "lawatlas_correct_statewide": 1,
+      "lawatlas_state_preempt": 2,
+      "lawatlas_action_preempt_imposing_restrictions_that_conflict_with_state_order": 2
+    },
+    "date_profile_sample": {
+      "date": {
+        "valid_dates_sample": 8364,
+        "invalid_dates_sample": 0,
+        "min_sample": "2020-01-20",
+        "max_sample": "2020-07-01"
+      }
+    },
+    "numeric_profile_sample": {
+      "lawatlas_mitigation_policy": {
+        "min_sample": 0.0,
+        "mean_sample": 0.694405,
+        "max_sample": 1.0,
+        "zeros_pct_sample": 30.56
+      },
+      "lawatlas_state_emergency": {
+        "min_sample": 0.0,
+        "mean_sample": 0.99759,
+        "max_sample": 1.0,
+        "zeros_pct_sample": 0.24
+      },
+      "lawatlas_emerg_statewide": {
+        "min_sample": 0.0,
+        "mean_sample": 0.981015,
+        "max_sample": 1.0,
+        "zeros_pct_sample": 1.9
+      },
+      "lawatlas_travel_requirement": {
+        "min_sample": 0.0,
+        "mean_sample": 0.265324,
+        "max_sample": 1.0,
+        "zeros_pct_sample": 73.47
+      },
+      "lawatlas_traveler_type_all_people_entering_the_state": {
+        "min_sample": 0.0,
+        "mean_sample": 0.510707,
+        "max_sample": 1.0,
+        "zeros_pct_sample": 48.93
+      },
+      "lawatlas_traveler_type_travelers_from_specified_states": {
+        "min_sample": 0.0,
+        "mean_sample": 0.277742,
+        "max_sample": 1.0,
+        "zeros_pct_sample": 72.23
+      },
+      "lawatlas_traveler_type_travelers_from_specified_countries": {
+        "min_sample": 0.0,
+        "mean_sample": 0.057106,
+        "max_sample": 1.0,
+        "zeros_pct_sample": 94.29
+      },
+      "lawatlas_traveler_type_general_international_travelers": {
+        "min_sample": 0.0,
+        "mean_sample": 0.24854,
+        "max_sample": 1.0,
+        "zeros_pct_sample": 75.15
+      },
+      "lawatlas_traveler_type_all_air_travelers": {
+        "min_sample": 0.0,
+        "mean_sample": 0.079169,
+        "max_sample": 1.0,
+        "zeros_pct_sample": 92.08
+      },
+      "lawatlas_travel_statewide": {
+        "min_sample": 1.0,
+        "mean_sample": 1.0,
+        "max_sample": 1.0,
+        "zeros_pct_sample": 0.0
+      },
+      "lawatlas_home_requirement": {
+        "min_sample": 0.0,
+        "mean_sample": 0.371384,
+        "max_sample": 1.0,
+        "zeros_pct_sample": 62.86
+      },
+      "lawatlas_home_except_engaging_in_essential_business_activities": {
+        "min_sample": 0.0,
+        "mean_sample": 0.98331,
+        "max_sample": 1.0,
+        "zeros_pct_sample": 1.67
+      }
+    }
+  },
+  {
+    "table": "mask-use-by-county.csv",
+    "rows_total_estimated": 3142,
+    "sample_rows_profiled": 3142,
+    "column_count": 6,
+    "numeric_column_count_sample": 6,
+    "top_null_columns_sample": [],
+    "key_cardinality_sample": {
+      "COUNTYFP": 3142
+    },
+    "date_profile_sample": {},
+    "numeric_profile_sample": {
+      "COUNTYFP": {
+        "min_sample": 1001.0,
+        "mean_sample": 30383.649268,
+        "max_sample": 56045.0,
+        "zeros_pct_sample": 0.0
+      },
+      "NEVER": {
+        "min_sample": 0.0,
+        "mean_sample": 0.07994,
+        "max_sample": 0.432,
+        "zeros_pct_sample": 0.29
+      },
+      "RARELY": {
+        "min_sample": 0.0,
+        "mean_sample": 0.082919,
+        "max_sample": 0.384,
+        "zeros_pct_sample": 0.16
+      },
+      "SOMETIMES": {
+        "min_sample": 0.001,
+        "mean_sample": 0.121318,
+        "max_sample": 0.422,
+        "zeros_pct_sample": 0.0
+      },
+      "FREQUENTLY": {
+        "min_sample": 0.029,
+        "mean_sample": 0.207725,
+        "max_sample": 0.549,
+        "zeros_pct_sample": 0.0
+      },
+      "ALWAYS": {
+        "min_sample": 0.115,
+        "mean_sample": 0.508094,
+        "max_sample": 0.889,
+        "zeros_pct_sample": 0.0
+      }
+    }
+  },
+  {
+    "table": "mobility.csv",
+    "rows_total_estimated": 6321226,
+    "sample_rows_profiled": 20001,
+    "column_count": 8,
+    "numeric_column_count_sample": 6,
+    "top_null_columns_sample": [
+      {
+        "column": "mobility_grocery_and_pharmacy",
+        "null_pct_sample": 38.93
+      },
+      {
+        "column": "mobility_transit_stations",
+        "null_pct_sample": 33.03
+      },
+      {
+        "column": "mobility_residential",
+        "null_pct_sample": 28.03
+      },
+      {
+        "column": "mobility_retail_and_recreation",
+        "null_pct_sample": 26.21
+      },
+      {
+        "column": "mobility_parks",
+        "null_pct_sample": 5.39
+      }
+    ],
+    "key_cardinality_sample": {
+      "mobility_residential": 53
+    },
+    "date_profile_sample": {
+      "date": {
+        "valid_dates_sample": 20000,
+        "invalid_dates_sample": 0,
+        "min_sample": "2020-02-15",
+        "max_sample": "2022-09-12"
+      }
+    },
+    "numeric_profile_sample": {
+      "mobility_retail_and_recreation": {
+        "min_sample": -96.0,
+        "mean_sample": -7.262045,
+        "max_sample": 233.0,
+        "zeros_pct_sample": 1.27
+      },
+      "mobility_grocery_and_pharmacy": {
+        "min_sample": -95.0,
+        "mean_sample": 19.465941,
+        "max_sample": 338.0,
+        "zeros_pct_sample": 1.4
+      },
+      "mobility_parks": {
+        "min_sample": -100.0,
+        "mean_sample": -24.132808,
+        "max_sample": 411.0,
+        "zeros_pct_sample": 0.7
+      },
+      "mobility_transit_stations": {
+        "min_sample": -94.0,
+        "mean_sample": 5.738221,
+        "max_sample": 228.0,
+        "zeros_pct_sample": 0.73
+      },
+      "mobility_workplaces": {
+        "min_sample": -91.0,
+        "mean_sample": 4.000475,
+        "max_sample": 210.0,
+        "zeros_pct_sample": 2.12
+      },
+      "mobility_residential": {
+        "min_sample": -16.0,
+        "mean_sample": 5.507538,
+        "max_sample": 36.0,
+        "zeros_pct_sample": 5.86
+      }
+    }
+  },
+  {
+    "table": "systems.csv",
+    "rows_total_estimated": 53,
+    "sample_rows_profiled": 54,
+    "column_count": 8,
+    "numeric_column_count_sample": 7,
+    "top_null_columns_sample": [
+      {
+        "column": "max_inmate_population_2020",
+        "null_pct_sample": 7.41
+      },
+      {
+        "column": "latest_inmate_population",
+        "null_pct_sample": 5.56
+      },
+      {
+        "column": "inmate_tests",
+        "null_pct_sample": 1.85
+      },
+      {
+        "column": "total_officer_cases",
+        "null_pct_sample": 1.85
+      },
+      {
+        "column": "total_officer_deaths",
+        "null_pct_sample": 1.85
+      }
+    ],
+    "key_cardinality_sample": {},
+    "date_profile_sample": {},
+    "numeric_profile_sample": {
+      "inmate_tests": {
+        "min_sample": 0.0,
+        "mean_sample": 84975.207547,
+        "max_sample": 673822.0,
+        "zeros_pct_sample": 3.77
+      },
+      "total_inmate_cases": {
+        "min_sample": 169.0,
+        "mean_sample": 9820.981481,
+        "max_sample": 108082.0,
+        "zeros_pct_sample": 0.0
+      },
+      "total_inmate_deaths": {
+        "min_sample": 0.0,
+        "mean_sample": 49.888889,
+        "max_sample": 246.0,
+        "zeros_pct_sample": 1.85
+      },
+      "latest_inmate_population": {
+        "min_sample": 0.0,
+        "mean_sample": 22984.666667,
+        "max_sample": 138297.0,
+        "zeros_pct_sample": 1.96
+      },
+      "max_inmate_population_2020": {
+        "min_sample": 1397.0,
+        "mean_sample": 23632.58,
+        "max_sample": 162000.0,
+        "zeros_pct_sample": 0.0
+      },
+      "total_officer_cases": {
+        "min_sample": 45.0,
+        "mean_sample": 2604.943396,
+        "max_sample": 33421.0,
+        "zeros_pct_sample": 0.0
+      },
+      "total_officer_deaths": {
+        "min_sample": 0.0,
+        "mean_sample": 4.90566,
+        "max_sample": 82.0,
+        "zeros_pct_sample": 39.62
+      }
+    }
+  },
+  {
+    "table": "us-counties-2020.csv",
+    "rows_total_estimated": 884736,
+    "sample_rows_profiled": 20001,
+    "column_count": 6,
+    "numeric_column_count_sample": 3,
+    "top_null_columns_sample": [
+      {
+        "column": "fips",
+        "null_pct_sample": 1.55
+      }
+    ],
+    "key_cardinality_sample": {
+      "county": 1283,
+      "state": 55,
+      "fips": 1963
+    },
+    "date_profile_sample": {
+      "date": {
+        "valid_dates_sample": 20000,
+        "invalid_dates_sample": 0,
+        "min_sample": "2020-01-21",
+        "max_sample": "2020-03-30"
+      }
+    },
+    "numeric_profile_sample": {
+      "fips": {
+        "min_sample": 1001.0,
+        "mean_sample": 28566.999441,
+        "max_sample": 56043.0,
+        "zeros_pct_sample": 0.0
+      },
+      "cases": {
+        "min_sample": 0.0,
+        "mean_sample": 38.35515,
+        "max_sample": 33983.0,
+        "zeros_pct_sample": 0.07
+      },
+      "deaths": {
+        "min_sample": 0.0,
+        "mean_sample": 0.6521,
+        "max_sample": 991.0,
+        "zeros_pct_sample": 86.38
+      }
+    }
+  },
+  {
+    "table": "us-counties-2021.csv",
+    "rows_total_estimated": 1185372,
+    "sample_rows_profiled": 20001,
+    "column_count": 6,
+    "numeric_column_count_sample": 3,
+    "top_null_columns_sample": [
+      {
+        "column": "deaths",
+        "null_pct_sample": 2.34
+      },
+      {
+        "column": "fips",
+        "null_pct_sample": 0.85
+      }
+    ],
+    "key_cardinality_sample": {
+      "county": 1930,
+      "state": 55,
+      "fips": 3218
+    },
+    "date_profile_sample": {
+      "date": {
+        "valid_dates_sample": 20000,
+        "invalid_dates_sample": 0,
+        "min_sample": "2021-01-01",
+        "max_sample": "2021-01-07"
+      }
+    },
+    "numeric_profile_sample": {
+      "fips": {
+        "min_sample": 1001.0,
+        "mean_sample": 30854.235766,
+        "max_sample": 78030.0,
+        "zeros_pct_sample": 0.0
+      },
+      "cases": {
+        "min_sample": 0.0,
+        "mean_sample": 6568.0862,
+        "max_sample": 871749.0,
+        "zeros_pct_sample": 0.04
+      },
+      "deaths": {
+        "min_sample": 0.0,
+        "mean_sample": 113.430166,
+        "max_sample": 25362.0,
+        "zeros_pct_sample": 3.26
+      }
+    }
+  },
+  {
+    "table": "us-counties-2022.csv",
+    "rows_total_estimated": 1188041,
+    "sample_rows_profiled": 20001,
+    "column_count": 6,
+    "numeric_column_count_sample": 3,
+    "top_null_columns_sample": [
+      {
+        "column": "deaths",
+        "null_pct_sample": 2.34
+      },
+      {
+        "column": "fips",
+        "null_pct_sample": 1.04
+      }
+    ],
+    "key_cardinality_sample": {
+      "county": 1930,
+      "state": 56,
+      "fips": 3218
+    },
+    "date_profile_sample": {
+      "date": {
+        "valid_dates_sample": 20000,
+        "invalid_dates_sample": 0,
+        "min_sample": "2022-01-01",
+        "max_sample": "2022-01-07"
+      }
+    },
+    "numeric_profile_sample": {
+      "fips": {
+        "min_sample": 1001.0,
+        "mean_sample": 30887.166532,
+        "max_sample": 78030.0,
+        "zeros_pct_sample": 0.0
+      },
+      "cases": {
+        "min_sample": 0.0,
+        "mean_sample": 17827.1654,
+        "max_sample": 1888230.0,
+        "zeros_pct_sample": 0.09
+      },
+      "deaths": {
+        "min_sample": 0.0,
+        "mean_sample": 266.51751,
+        "max_sample": 35683.0,
+        "zeros_pct_sample": 1.1
+      }
+    }
+  },
+  {
+    "table": "us-states.csv",
+    "rows_total_estimated": 61941,
+    "sample_rows_profiled": 20001,
+    "column_count": 5,
+    "numeric_column_count_sample": 3,
+    "top_null_columns_sample": [],
+    "key_cardinality_sample": {
+      "state": 55,
+      "fips": 55
+    },
+    "date_profile_sample": {
+      "date": {
+        "valid_dates_sample": 20000,
+        "invalid_dates_sample": 0,
+        "min_sample": "2020-01-21",
+        "max_sample": "2021-03-01"
+      }
+    },
+    "numeric_profile_sample": {
+      "fips": {
+        "min_sample": 1.0,
+        "mean_sample": 31.90775,
+        "max_sample": 78.0,
+        "zeros_pct_sample": 0.0
+      },
+      "cases": {
+        "min_sample": 1.0,
+        "mean_sample": 162173.89225,
+        "max_sample": 3573775.0,
+        "zeros_pct_sample": 0.0
+      },
+      "deaths": {
+        "min_sample": 0.0,
+        "mean_sample": 3617.62275,
+        "max_sample": 52487.0,
+        "zeros_pct_sample": 4.78
+      }
+    }
+  },
+  {
+    "table": "us.csv",
+    "rows_total_estimated": 1157,
+    "sample_rows_profiled": 1158,
+    "column_count": 3,
+    "numeric_column_count_sample": 2,
+    "top_null_columns_sample": [],
+    "key_cardinality_sample": {},
+    "date_profile_sample": {
+      "date": {
+        "valid_dates_sample": 1158,
+        "invalid_dates_sample": 0,
+        "min_sample": "2020-01-21",
+        "max_sample": "2023-03-23"
+      }
+    },
+    "numeric_profile_sample": {
+      "cases": {
+        "min_sample": 1.0,
+        "mean_sample": 47597456.107081,
+        "max_sample": 103910034.0,
+        "zeros_pct_sample": 0.0
+      },
+      "deaths": {
+        "min_sample": 0.0,
+        "mean_sample": 630068.220207,
+        "max_sample": 1135343.0,
+        "zeros_pct_sample": 3.37
+      }
+    }
+  }
+]

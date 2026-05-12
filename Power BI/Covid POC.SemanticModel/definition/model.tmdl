@@ -1,0 +1,20 @@
+model Model
+	culture: en-US
+	defaultPowerBIDataSourceVersion: powerBI_V3
+	sourceQueryCulture: en-US
+	dataAccessOptions
+		legacyRedirects
+		returnErrorValuesAsNull
+
+annotation __PBI_TimeIntelligenceEnabled = 0
+
+annotation PBI_QueryOrder = ["semantic vw_powerbi_poc_dataset","semantic vw_trust_gate_status","semantic vw_metric_contracts"]
+
+annotation PBI_ProTooling = ["DevMode"]
+
+ref table 'semantic vw_powerbi_poc_dataset'
+ref table 'semantic vw_trust_gate_status'
+ref table 'semantic vw_metric_contracts'
+
+ref cultureInfo en-US
+

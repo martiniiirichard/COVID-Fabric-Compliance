@@ -1,0 +1,8 @@
+﻿"run_id","run_ts","file_name","copied"
+"LMDL-INIT-20260511-230044","2026-05-11 23:00:44 -05:00","epidemiology.csv","True"
+"LMDL-INIT-20260511-230044","2026-05-11 23:00:44 -05:00","hospitalizations.csv","True"
+"LMDL-INIT-20260511-230044","2026-05-11 23:00:44 -05:00","deaths.csv","True"
+"LMDL-INIT-20260511-230044","2026-05-11 23:00:44 -05:00","mobility.csv","True"
+"LMDL-INIT-20260511-230044","2026-05-11 23:00:44 -05:00","lawatlas-emergency-declarations.csv","True"
+"LMDL-INIT-20260511-230044","2026-05-11 23:00:44 -05:00","demographics.csv","True"
+"LMDL-INIT-20260511-230044","2026-05-11 23:00:44 -05:00","us-counties-2022.csv","True"

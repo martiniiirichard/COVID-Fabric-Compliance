@@ -1,0 +1,6 @@
+﻿"metric_id","metric_name","grain","source_logic","reconciliation_rule","certification_state"
+"INCIDENCE_DAILY","Daily New Confirmed Cases","One row represents one date and geography in the Google epidemiology source.","silver.vw_epidemiology.NewConfirmed","Additive across date and geography; validate against bronze.epidemiology row count and null DateKey/GeoKey checks.","POC"
+"MORTALITY_DAILY","Daily New Deceased","One row represents one date and geography in the Google epidemiology source.","silver.vw_epidemiology.NewDeceased","Additive across date and geography; compare against cumulative trend direction and audit null checks.","POC"
+"HOSPITAL_PRESSURE","Current Hospitalized Patients","One row represents one date and geography in the Google hospitalizations source.","silver.vw_hospitalizations.CurrentHospitalized","Snapshot metric; do not sum across dates without explicit period logic.","POC"
+"MOBILITY_WORKPLACE","Workplace Mobility Index","One row represents one date and geography in the mobility source.","silver.vw_mobility.MobilityWorkplaces","Average over selected period; validate DateKey/GeoKey completeness.","POC"
+"TRUST_GATE","POC Trust Gate Status","One row represents one source object validation summary.","gold.vw_audit_trust","T2 requires loaded rows > 0 and zero null DateKey/GeoKey rows for critical daily facts.","POC"

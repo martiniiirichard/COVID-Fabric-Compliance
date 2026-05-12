@@ -1,0 +1,63 @@
+table 'semantic vw_trust_gate_status'
+	lineageTag: 0a5e767a-2aca-442b-a7b8-f7ef47f6376a
+
+	column object_name
+		dataType: string
+		lineageTag: 1baf3b25-8934-45a2-a7a5-d76b1bcd5a4f
+		summarizeBy: none
+		sourceColumn: object_name
+
+		annotation SummarizationSetBy = Automatic
+
+	column row_count
+		dataType: int64
+		formatString: 0
+		lineageTag: 5e279cd9-2a7a-4a46-88c6-f783f8ee5b19
+		summarizeBy: sum
+		sourceColumn: row_count
+
+		annotation SummarizationSetBy = Automatic
+
+	column null_datekey_rows
+		dataType: int64
+		formatString: 0
+		lineageTag: 52a7d138-f370-4bf2-8dcc-c42902cad477
+		summarizeBy: sum
+		sourceColumn: null_datekey_rows
+
+		annotation SummarizationSetBy = Automatic
+
+	column null_geokey_rows
+		dataType: int64
+		formatString: 0
+		lineageTag: 60661e60-dee1-4a28-a30a-6e0a3fd3f2e5
+		summarizeBy: sum
+		sourceColumn: null_geokey_rows
+
+		annotation SummarizationSetBy = Automatic
+
+	column trust_gate
+		dataType: string
+		lineageTag: 76bce7e2-552c-4e8d-99be-c1d90b44bc85
+		summarizeBy: none
+		sourceColumn: trust_gate
+
+		annotation SummarizationSetBy = Automatic
+
+	column trust_gate_reason
+		dataType: string
+		lineageTag: c30a2edb-d1e4-4de4-afcc-3e704c316941
+		summarizeBy: none
+		sourceColumn: trust_gate_reason
+
+		annotation SummarizationSetBy = Automatic
+
+	partition 'semantic vw_trust_gate_status' = m
+		mode: import
+		source =
+				let
+				    Source = Sql.Database(".\SQLEXPRESS01", "CovidMedallionPOC"),
+				    semantic_vw_trust_gate_status = Source{[Schema="semantic",Item="vw_trust_gate_status"]}[Data]
+				in
+				    semantic_vw_trust_gate_status
+

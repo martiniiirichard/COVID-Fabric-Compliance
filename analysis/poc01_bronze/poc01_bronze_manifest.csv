@@ -1,0 +1,9 @@
+﻿"run_id","run_ts","file_name","source_path","copied","reason","row_count","column_count"
+"POC01-20260511-225640","2026-05-11 22:56:40 -05:00","epidemiology.csv","C:\Users\marti\Documents\Codex\COVID-Fabric-Compliance\local_dw\layers\bronze\epidemiology.csv","True","","12525825","10"
+"POC01-20260511-225640","2026-05-11 22:56:40 -05:00","hospitalizations.csv","C:\Users\marti\Documents\Codex\COVID-Fabric-Compliance\local_dw\layers\bronze\hospitalizations.csv","True","","1768485","11"
+"POC01-20260511-225640","2026-05-11 22:56:40 -05:00","deaths.csv","C:\Users\marti\Documents\Codex\COVID-Fabric-Compliance\local_dw\layers\bronze\deaths.csv","True","","7258","12"
+"POC01-20260511-225640","2026-05-11 22:56:40 -05:00","mobility.csv","C:\Users\marti\Documents\Codex\COVID-Fabric-Compliance\local_dw\layers\bronze\mobility.csv","True","","6321226","8"
+"POC01-20260511-225640","2026-05-11 22:56:40 -05:00","lawatlas-emergency-declarations.csv","C:\Users\marti\Documents\Codex\COVID-Fabric-Compliance\local_dw\layers\bronze\lawatlas-emergency-declarations.csv","True","","8364","104"
+"POC01-20260511-225640","2026-05-11 22:56:40 -05:00","demographics.csv","C:\Users\marti\Documents\Codex\COVID-Fabric-Compliance\local_dw\layers\bronze\demographics.csv","True","","21689","19"
+"POC01-20260511-225640","2026-05-11 22:56:40 -05:00","us-counties-2022.csv","C:\Users\marti\Documents\Codex\COVID-Fabric-Compliance\local_dw\layers\bronze\us-counties-2022.csv","True","","1188042","6"
+

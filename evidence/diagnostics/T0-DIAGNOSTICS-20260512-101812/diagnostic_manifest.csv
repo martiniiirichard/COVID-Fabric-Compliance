@@ -1,0 +1,5 @@
+﻿"run_id","run_ts","file_name","row_count","output_path"
+"T0-DIAGNOSTICS-20260512-101812","2026-05-12 10:18:12 -05:00","deaths_null_datekey_sample.csv","100","C:\Users\marti\Documents\Codex\COVID-Fabric-Compliance\evidence\diagnostics\T0-DIAGNOSTICS-20260512-101812\deaths_null_datekey_sample.csv"
+"T0-DIAGNOSTICS-20260512-101812","2026-05-12 10:18:12 -05:00","deaths_null_datekey_summary.csv","13","C:\Users\marti\Documents\Codex\COVID-Fabric-Compliance\evidence\diagnostics\T0-DIAGNOSTICS-20260512-101812\deaths_null_datekey_summary.csv"
+"T0-DIAGNOSTICS-20260512-101812","2026-05-12 10:18:12 -05:00","us_counties_2022_null_geokey_sample.csv","100","C:\Users\marti\Documents\Codex\COVID-Fabric-Compliance\evidence\diagnostics\T0-DIAGNOSTICS-20260512-101812\us_counties_2022_null_geokey_sample.csv"
+"T0-DIAGNOSTICS-20260512-101812","2026-05-12 10:18:12 -05:00","us_counties_2022_null_geokey_summary.csv","49","C:\Users\marti\Documents\Codex\COVID-Fabric-Compliance\evidence\diagnostics\T0-DIAGNOSTICS-20260512-101812\us_counties_2022_null_geokey_summary.csv"

@@ -1,0 +1,138 @@
+table 'semantic vw_powerbi_poc_dataset'
+	lineageTag: 9410a985-ec77-49b6-a1e6-4e4e65bc12af
+
+	column DateKey
+		dataType: int64
+		formatString: 0
+		lineageTag: 36078757-80e4-4dbc-865b-793488fdbb3f
+		summarizeBy: count
+		sourceColumn: DateKey
+
+		annotation SummarizationSetBy = Automatic
+
+	column GeoKey
+		dataType: string
+		lineageTag: 5ff881f1-8a70-42b2-944e-9e6ac7b81241
+		summarizeBy: none
+		sourceColumn: GeoKey
+
+		annotation SummarizationSetBy = Automatic
+
+	column Date
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: ae200299-7a2e-4659-a592-33cb2a22126b
+		summarizeBy: none
+		sourceColumn: Date
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column NewConfirmed
+		dataType: double
+		lineageTag: 11f6c17f-2286-49bf-8e2c-c8347c1eac5b
+		summarizeBy: sum
+		sourceColumn: NewConfirmed
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column NewDeceased
+		dataType: double
+		lineageTag: f81ac70d-69a1-4890-9e24-2fe1b463eae0
+		summarizeBy: sum
+		sourceColumn: NewDeceased
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column CurrentHospitalized
+		dataType: double
+		lineageTag: 97f72e04-5bd7-4c78-af05-a6734606ef31
+		summarizeBy: sum
+		sourceColumn: CurrentHospitalized
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column CurrentICU
+		dataType: double
+		lineageTag: c623acf5-2817-4c5e-a344-341005a11f73
+		summarizeBy: sum
+		sourceColumn: CurrentICU
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column MobilityWorkplaces
+		dataType: double
+		lineageTag: f14962bd-6a8b-47d0-b47e-86a67a2edb2a
+		summarizeBy: sum
+		sourceColumn: MobilityWorkplaces
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column MobilityResidential
+		dataType: double
+		lineageTag: 20459a91-462c-4748-91a5-38c1caa45419
+		summarizeBy: sum
+		sourceColumn: MobilityResidential
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column Population
+		dataType: double
+		lineageTag: ea13f154-28ef-496c-bd07-88158fb146ce
+		summarizeBy: sum
+		sourceColumn: Population
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column NewConfirmedPer100k
+		dataType: double
+		lineageTag: 83571c99-a1b4-4986-8723-b064f61814c0
+		summarizeBy: sum
+		sourceColumn: NewConfirmedPer100k
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column DailyFatalityRatio
+		dataType: double
+		lineageTag: 449f1fe1-161f-4722-b7d4-c51b1382b6c5
+		summarizeBy: sum
+		sourceColumn: DailyFatalityRatio
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column HospitalPressureBand
+		dataType: string
+		lineageTag: e8f126a8-c1dc-48d1-8a34-6d7d0b73bc67
+		summarizeBy: none
+		sourceColumn: HospitalPressureBand
+
+		annotation SummarizationSetBy = Automatic
+
+	partition 'semantic vw_powerbi_poc_dataset' = m
+		mode: import
+		source =
+				let
+				    Source = Sql.Database(".\SQLEXPRESS01", "CovidMedallionPOC"),
+				    semantic_vw_powerbi_poc_dataset = Source{[Schema="semantic",Item="vw_powerbi_poc_dataset"]}[Data]
+				in
+				    semantic_vw_powerbi_poc_dataset
+

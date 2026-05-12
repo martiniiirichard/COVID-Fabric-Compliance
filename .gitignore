@@ -1,0 +1,25 @@
+﻿# Raw/source data too large for normal GitHub pushes; preserve via documented source path or external storage.
+local_dw/layers/bronze/*.csv
+poc/bronze_raw_subset/
+
+# Generated local layer outputs
+local_dw/layers/silver/
+local_dw/layers/gold/
+
+# Power BI local/generated cache
+Power BI/**/.pbi/cache.abf
+Power BI/**/.pbi/localSettings.json
+Power BI/**/.pbi/*.abf
+Power BI/**/.pbi/*.log
+Power BI/**/.pbi/*.tmp
+
+# Runtime/temp artifacts
+*.tmp
+*.bak
+*.log
+.DS_Store
+Thumbs.db
+
+# Keep archive manifests/docs, but avoid accidentally committing future large archived data extracts.
+_archive/**/*.csv
+!_archive/**/cleanup_manifest.csv

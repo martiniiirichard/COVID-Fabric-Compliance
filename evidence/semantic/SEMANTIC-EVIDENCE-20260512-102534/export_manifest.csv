@@ -1,0 +1,4 @@
+﻿"run_id","run_ts","file_name","row_count","output_path"
+"SEMANTIC-EVIDENCE-20260512-102534","2026-05-12 10:25:34 -05:00","semantic.vw_trust_gate_status.csv","7","C:\Users\marti\Documents\Codex\COVID-Fabric-Compliance\evidence\semantic\SEMANTIC-EVIDENCE-20260512-102534\semantic.vw_trust_gate_status.csv"
+"SEMANTIC-EVIDENCE-20260512-102534","2026-05-12 10:25:34 -05:00","semantic.vw_metric_contracts.csv","5","C:\Users\marti\Documents\Codex\COVID-Fabric-Compliance\evidence\semantic\SEMANTIC-EVIDENCE-20260512-102534\semantic.vw_metric_contracts.csv"
+"SEMANTIC-EVIDENCE-20260512-102534","2026-05-12 10:25:34 -05:00","semantic.vw_powerbi_poc_dataset_top100.csv","100","C:\Users\marti\Documents\Codex\COVID-Fabric-Compliance\evidence\semantic\SEMANTIC-EVIDENCE-20260512-102534\semantic.vw_powerbi_poc_dataset_top100.csv"

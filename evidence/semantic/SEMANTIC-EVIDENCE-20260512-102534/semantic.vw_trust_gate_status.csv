@@ -1,0 +1,8 @@
+﻿"object_name","row_count","null_datekey_rows","null_geokey_rows","trust_gate","trust_gate_reason"
+"epidemiology","12525825","0","0","T2","Loaded and key checks passed."
+"hospitalizations","1768485","0","0","T2","Loaded and key checks passed."
+"deaths","7258","113","0","T1","Controlled exception: unresolved deaths DateKey rows lack source year/start_date and remain excluded from date-grain analysis."
+"mobility","6321226","0","0","T2","Loaded and key checks passed."
+"demographics","21689","0","0","T2","Loaded and key checks passed."
+"lawatlas_policy","8364","0","0","T2","Loaded and key checks passed."
+"us_counties_2022","1188042","0","0","T2","Loaded and key checks passed."

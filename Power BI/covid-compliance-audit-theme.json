@@ -1,0 +1,212 @@
+{
+  "name": "COVID Compliance Audit",
+  "dataColors": [
+    "#1F6B7A",
+    "#D18F2F",
+    "#5B7C46",
+    "#8A5A44",
+    "#6B6F8F",
+    "#B54B4B",
+    "#4F7CA6",
+    "#7D6A4F"
+  ],
+  "foreground": "#1F2933",
+  "foregroundNeutralSecondary": "#52616B",
+  "foregroundNeutralTertiary": "#7B8794",
+  "background": "#F7F9FA",
+  "backgroundLight": "#FFFFFF",
+  "backgroundNeutral": "#E6ECEF",
+  "tableAccent": "#1F6B7A",
+  "good": "#2F6F4E",
+  "neutral": "#6B7280",
+  "bad": "#B54B4B",
+  "maximum": "#1F6B7A",
+  "center": "#D18F2F",
+  "minimum": "#B54B4B",
+  "textClasses": {
+    "title": {
+      "fontFace": "Segoe UI Semibold",
+      "fontSize": 18,
+      "color": "#1F2933"
+    },
+    "header": {
+      "fontFace": "Segoe UI Semibold",
+      "fontSize": 13,
+      "color": "#1F2933"
+    },
+    "label": {
+      "fontFace": "Segoe UI",
+      "fontSize": 10,
+      "color": "#52616B"
+    },
+    "callout": {
+      "fontFace": "Segoe UI Semibold",
+      "fontSize": 28,
+      "color": "#1F2933"
+    }
+  },
+  "visualStyles": {
+    "*": {
+      "*": {
+        "title": [
+          {
+            "show": true,
+            "fontFace": "Segoe UI Semibold",
+            "fontSize": 11,
+            "color": {
+              "solid": {
+                "color": "#1F2933"
+              }
+            }
+          }
+        ],
+        "background": [
+          {
+            "show": true,
+            "color": {
+              "solid": {
+                "color": "#FFFFFF"
+              }
+            },
+            "transparency": 0
+          }
+        ],
+        "border": [
+          {
+            "show": true,
+            "color": {
+              "solid": {
+                "color": "#D6DEE3"
+              }
+            },
+            "radius": 4
+          }
+        ],
+        "visualHeader": [
+          {
+            "show": false
+          }
+        ]
+      }
+    },
+    "page": {
+      "*": {
+        "background": [
+          {
+            "color": {
+              "solid": {
+                "color": "#F7F9FA"
+              }
+            },
+            "transparency": 0
+          }
+        ],
+        "outspace": [
+          {
+            "color": {
+              "solid": {
+                "color": "#F7F9FA"
+              }
+            },
+            "transparency": 0
+          }
+        ]
+      }
+    },
+    "card": {
+      "*": {
+        "categoryLabels": [
+          {
+            "show": true,
+            "fontFace": "Segoe UI",
+            "fontSize": 10,
+            "color": {
+              "solid": {
+                "color": "#52616B"
+              }
+            }
+          }
+        ],
+        "labels": [
+          {
+            "fontFace": "Segoe UI Semibold",
+            "fontSize": 24,
+            "color": {
+              "solid": {
+                "color": "#1F2933"
+              }
+            }
+          }
+        ]
+      }
+    },
+    "tableEx": {
+      "*": {
+        "grid": [
+          {
+            "gridVertical": false,
+            "gridHorizontal": true,
+            "outlineColor": {
+              "solid": {
+                "color": "#D6DEE3"
+              }
+            }
+          }
+        ],
+        "columnHeaders": [
+          {
+            "fontFace": "Segoe UI Semibold",
+            "fontSize": 10,
+            "fontColor": {
+              "solid": {
+                "color": "#1F2933"
+              }
+            },
+            "backColor": {
+              "solid": {
+                "color": "#E6ECEF"
+              }
+            }
+          }
+        ],
+        "values": [
+          {
+            "fontFace": "Segoe UI",
+            "fontSize": 9,
+            "fontColor": {
+              "solid": {
+                "color": "#1F2933"
+              }
+            }
+          }
+        ]
+      }
+    },
+    "slicer": {
+      "*": {
+        "items": [
+          {
+            "fontFace": "Segoe UI",
+            "fontSize": 10,
+            "fontColor": {
+              "solid": {
+                "color": "#1F2933"
+              }
+            }
+          }
+        ],
+        "header": [
+          {
+            "fontFace": "Segoe UI Semibold",
+            "fontSize": 10,
+            "fontColor": {
+              "solid": {
+                "color": "#52616B"
+              }
+            }
+          }
+        ]
+      }
+    }
+  }
+}

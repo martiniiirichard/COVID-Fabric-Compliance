@@ -1,0 +1,62 @@
+table 'semantic vw_metric_contracts'
+	lineageTag: f38e7ca3-9017-41af-b8fe-b90e6d1a9dd2
+
+	column metric_id
+		dataType: string
+		lineageTag: 6e03b58f-2fc4-41a3-a20e-4142233a5b8f
+		summarizeBy: none
+		sourceColumn: metric_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column metric_name
+		dataType: string
+		lineageTag: df66ff65-dc64-46a5-8ac6-601267392e92
+		summarizeBy: none
+		sourceColumn: metric_name
+
+		annotation SummarizationSetBy = Automatic
+
+	column grain
+		dataType: string
+		lineageTag: 12153cd0-b728-4b87-9e9f-45dca20caf71
+		summarizeBy: none
+		sourceColumn: grain
+
+		annotation SummarizationSetBy = Automatic
+
+	column source_logic
+		dataType: string
+		lineageTag: 06df2e71-e661-4881-b030-e1449216603b
+		summarizeBy: none
+		sourceColumn: source_logic
+
+		annotation SummarizationSetBy = Automatic
+
+	column reconciliation_rule
+		dataType: string
+		lineageTag: 3cc9e8f4-434c-497c-9cb3-f1359f1fbfbf
+		summarizeBy: none
+		sourceColumn: reconciliation_rule
+
+		annotation SummarizationSetBy = Automatic
+
+	column certification_state
+		dataType: string
+		lineageTag: f12553e2-cd84-4550-92ab-c41f3e520f21
+		summarizeBy: none
+		sourceColumn: certification_state
+
+		annotation SummarizationSetBy = Automatic
+
+	partition 'semantic vw_metric_contracts' = m
+		mode: import
+		source =
+				let
+				    Source = Sql.Database(".\SQLEXPRESS01", "CovidMedallionPOC"),
+				    semantic_vw_metric_contracts = Source{[Schema="semantic",Item="vw_metric_contracts"]}[Data]
+				in
+				    semantic_vw_metric_contracts
+
+	annotation PBI_ResultType = Table
+
