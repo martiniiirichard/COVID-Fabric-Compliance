@@ -1,27 +1,63 @@
 {
-  "name": "card_trust_gate_rows",
+  "name": "spark_deceased",
   "visual": {
-    "visualType": "card",
+    "visualType": "lineChart",
     "query": {
       "queryState": {
-        "Values": {
+        "Category": {
           "projections": [
             {
-              "queryRef": "semantic vw_trust_gate_status.Rows Under Trust Gates",
+              "queryRef": "semantic vw_powerbi_poc_dataset.Date",
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "semantic vw_powerbi_poc_dataset"
+                    }
+                  },
+                  "Property": "Date"
+                }
+              },
+              "nativeQueryRef": "Date"
+            }
+          ]
+        },
+        "Y": {
+          "projections": [
+            {
+              "queryRef": "semantic vw_powerbi_poc_dataset.Total New Deceased",
               "field": {
                 "Measure": {
                   "Expression": {
                     "SourceRef": {
-                      "Entity": "semantic vw_trust_gate_status"
+                      "Entity": "semantic vw_powerbi_poc_dataset"
                     }
                   },
-                  "Property": "Rows Under Trust Gates"
+                  "Property": "Total New Deceased"
                 }
               },
-              "nativeQueryRef": "Rows Under Trust Gates"
+              "nativeQueryRef": "Total New Deceased"
             }
           ]
         }
+      },
+      "sortDefinition": {
+        "sort": [
+          {
+            "field": {
+              "Measure": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "semantic vw_powerbi_poc_dataset"
+                  }
+                },
+                "Property": "Total New Deceased"
+              }
+            },
+            "direction": "Descending"
+          }
+        ],
+        "isDefaultSort": true
       }
     },
     "objects": {},
@@ -40,7 +76,7 @@
             "text": {
               "expr": {
                 "Literal": {
-                  "Value": "'Can executives trust this view?'"
+                  "Value": "''"
                 }
               }
             }
@@ -141,16 +177,36 @@
             }
           }
         }
+      ],
+      "visualTooltip": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "type": {
+              "expr": {
+                "Literal": {
+                  "Value": "'ReportPage'"
+                }
+              }
+            }
+          }
+        }
       ]
     }
   },
   "position": {
-    "x": 964,
-    "y": 112,
-    "width": 284,
-    "height": 82,
-    "z": 220,
-    "tabOrder": 220
+    "x": 412,
+    "y": 198,
+    "z": 215,
+    "width": 260,
+    "height": 56,
+    "tabOrder": 215
   },
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.7.0/schema.json"
 }

@@ -2,9 +2,9 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.7.0/schema.json",
   "name": "98eef6f47c42b878",
   "position": {
-    "x": 112,
+    "x": 144,
     "y": 18,
-    "width": 760,
+    "width": 680,
     "height": 42,
     "z": 300,
     "tabOrder": 300
@@ -19,7 +19,7 @@
               {
                 "textRuns": [
                   {
-                    "value": "COVID Compliance Analytics POC",
+                    "value": "COVID Executive Control Room",
                     "textStyle": {
                       "fontFamily": "Segoe UI Semibold",
                       "fontSize": "24pt",

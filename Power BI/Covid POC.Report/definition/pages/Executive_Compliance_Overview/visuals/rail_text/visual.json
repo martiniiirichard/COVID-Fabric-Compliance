@@ -2,11 +2,11 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.7.0/schema.json",
   "name": "rail_text",
   "position": {
-    "x": 16,
-    "y": 120,
+    "x": 18,
+    "y": 118,
     "z": 300,
-    "width": 56,
-    "height": 120,
+    "width": 86,
+    "height": 92,
     "tabOrder": 300
   },
   "visual": {
@@ -32,10 +32,10 @@
               {
                 "textRuns": [
                   {
-                    "value": "POC",
+                    "value": "COMMAND",
                     "textStyle": {
                       "fontFamily": "Segoe UI",
-                      "fontSize": "12pt",
+                      "fontSize": "9pt",
                       "fontWeight": "600",
                       "color": "#A9D6CF"
                     }
@@ -45,10 +45,10 @@
               {
                 "textRuns": [
                   {
-                    "value": "AUDIT",
+                    "value": "Trust",
                     "textStyle": {
                       "fontFamily": "Segoe UI",
-                      "fontSize": "10pt",
+                      "fontSize": "12pt",
                       "fontWeight": "600",
                       "color": "#D9EDE7"
                     }

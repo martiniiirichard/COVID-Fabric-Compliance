@@ -1,27 +1,63 @@
 {
-  "name": "card_trust_gate_rows",
+  "name": "detail_trend",
   "visual": {
-    "visualType": "card",
+    "visualType": "lineChart",
     "query": {
       "queryState": {
-        "Values": {
+        "Category": {
           "projections": [
             {
-              "queryRef": "semantic vw_trust_gate_status.Rows Under Trust Gates",
+              "queryRef": "semantic vw_powerbi_poc_dataset.Date",
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "semantic vw_powerbi_poc_dataset"
+                    }
+                  },
+                  "Property": "Date"
+                }
+              },
+              "nativeQueryRef": "Date"
+            }
+          ]
+        },
+        "Y": {
+          "projections": [
+            {
+              "queryRef": "semantic vw_powerbi_poc_dataset.Total New Confirmed",
               "field": {
                 "Measure": {
                   "Expression": {
                     "SourceRef": {
-                      "Entity": "semantic vw_trust_gate_status"
+                      "Entity": "semantic vw_powerbi_poc_dataset"
                     }
                   },
-                  "Property": "Rows Under Trust Gates"
+                  "Property": "Total New Confirmed"
                 }
               },
-              "nativeQueryRef": "Rows Under Trust Gates"
+              "nativeQueryRef": "Total New Confirmed"
             }
           ]
         }
+      },
+      "sortDefinition": {
+        "sort": [
+          {
+            "field": {
+              "Measure": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "semantic vw_powerbi_poc_dataset"
+                  }
+                },
+                "Property": "Total New Confirmed"
+              }
+            },
+            "direction": "Descending"
+          }
+        ],
+        "isDefaultSort": true
       }
     },
     "objects": {},
@@ -40,7 +76,7 @@
             "text": {
               "expr": {
                 "Literal": {
-                  "Value": "'Can executives trust this view?'"
+                  "Value": "'How the selected geography changed over time'"
                 }
               }
             }
@@ -145,12 +181,12 @@
     }
   },
   "position": {
-    "x": 964,
-    "y": 112,
-    "width": 284,
-    "height": 82,
-    "z": 220,
-    "tabOrder": 220
+    "x": 40,
+    "y": 244,
+    "z": 0,
+    "width": 700,
+    "height": 250,
+    "tabOrder": 0
   },
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.7.0/schema.json"
 }

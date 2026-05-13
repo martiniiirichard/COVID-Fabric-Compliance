@@ -1,27 +1,101 @@
 {
-  "name": "card_trust_gate_rows",
+  "name": "detail_table",
   "visual": {
-    "visualType": "card",
+    "visualType": "tableEx",
     "query": {
       "queryState": {
         "Values": {
           "projections": [
             {
-              "queryRef": "semantic vw_trust_gate_status.Rows Under Trust Gates",
+              "queryRef": "semantic vw_powerbi_poc_dataset.GeoKey",
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "semantic vw_powerbi_poc_dataset"
+                    }
+                  },
+                  "Property": "GeoKey"
+                }
+              },
+              "nativeQueryRef": "Geo"
+            },
+            {
+              "queryRef": "semantic vw_powerbi_poc_dataset.Date",
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "semantic vw_powerbi_poc_dataset"
+                    }
+                  },
+                  "Property": "Date"
+                }
+              },
+              "nativeQueryRef": "Date"
+            },
+            {
+              "queryRef": "semantic vw_powerbi_poc_dataset.Total New Confirmed",
               "field": {
                 "Measure": {
                   "Expression": {
                     "SourceRef": {
-                      "Entity": "semantic vw_trust_gate_status"
+                      "Entity": "semantic vw_powerbi_poc_dataset"
                     }
                   },
-                  "Property": "Rows Under Trust Gates"
+                  "Property": "Total New Confirmed"
                 }
               },
-              "nativeQueryRef": "Rows Under Trust Gates"
+              "nativeQueryRef": "Cases"
+            },
+            {
+              "queryRef": "semantic vw_powerbi_poc_dataset.Total New Deceased",
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "semantic vw_powerbi_poc_dataset"
+                    }
+                  },
+                  "Property": "Total New Deceased"
+                }
+              },
+              "nativeQueryRef": "Deaths"
+            },
+            {
+              "queryRef": "semantic vw_powerbi_poc_dataset.Current Hospitalized Total",
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "semantic vw_powerbi_poc_dataset"
+                    }
+                  },
+                  "Property": "Current Hospitalized Total"
+                }
+              },
+              "nativeQueryRef": "Hospitalized"
             }
           ]
         }
+      },
+      "sortDefinition": {
+        "sort": [
+          {
+            "field": {
+              "Measure": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "semantic vw_powerbi_poc_dataset"
+                  }
+                },
+                "Property": "Total New Confirmed"
+              }
+            },
+            "direction": "Descending"
+          }
+        ],
+        "isDefaultSort": true
       }
     },
     "objects": {},
@@ -40,7 +114,7 @@
             "text": {
               "expr": {
                 "Literal": {
-                  "Value": "'Can executives trust this view?'"
+                  "Value": "'Evidence rows for audit follow-up'"
                 }
               }
             }
@@ -145,12 +219,12 @@
     }
   },
   "position": {
-    "x": 964,
-    "y": 112,
-    "width": 284,
-    "height": 82,
-    "z": 220,
-    "tabOrder": 220
+    "x": 40,
+    "y": 524,
+    "z": 0,
+    "width": 1160,
+    "height": 160,
+    "tabOrder": 0
   },
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.7.0/schema.json"
 }

@@ -40,7 +40,7 @@
             "text": {
               "expr": {
                 "Literal": {
-                  "Value": "'Total New Deceased'"
+                  "Value": "'Is severity rising?'"
                 }
               }
             }
@@ -122,7 +122,7 @@
             "radius": {
               "expr": {
                 "Literal": {
-                  "Value": "14L"
+                  "Value": "12L"
                 }
               }
             }
@@ -135,7 +135,7 @@
             "show": {
               "expr": {
                 "Literal": {
-                  "Value": "true"
+                  "Value": "false"
                 }
               }
             }
@@ -145,10 +145,10 @@
     }
   },
   "position": {
-    "x": 396,
-    "y": 120,
-    "width": 280,
-    "height": 140,
+    "x": 412,
+    "y": 112,
+    "width": 260,
+    "height": 82,
     "z": 220,
     "tabOrder": 220
   },

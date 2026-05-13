@@ -1,0 +1,9 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/page/2.1.0/schema.json",
+  "name": "b0edde7e5e463d26",
+  "displayName": "Data Point Tooltip",
+  "width": 360,
+  "height": 260,
+  "displayOption": "ActualSize",
+  "type": "Tooltip"
+}

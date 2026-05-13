@@ -58,7 +58,7 @@
             "text": {
               "expr": {
                 "Literal": {
-                  "Value": "'Hospital Pressure Band'"
+                  "Value": "'Hospital pressure concentrates where risk is highest'"
                 }
               }
             }
@@ -140,7 +140,7 @@
             "radius": {
               "expr": {
                 "Literal": {
-                  "Value": "14L"
+                  "Value": "12L"
                 }
               }
             }
@@ -153,7 +153,27 @@
             "show": {
               "expr": {
                 "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "visualTooltip": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
                   "Value": "true"
+                }
+              }
+            },
+            "type": {
+              "expr": {
+                "Literal": {
+                  "Value": "'ReportPage'"
                 }
               }
             }
@@ -163,10 +183,10 @@
     }
   },
   "position": {
-    "x": 880,
-    "y": 284,
-    "width": 368,
-    "height": 196,
+    "x": 884,
+    "y": 276,
+    "width": 364,
+    "height": 198,
     "z": 220,
     "tabOrder": 220
   },

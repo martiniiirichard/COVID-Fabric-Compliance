@@ -64,3 +64,11 @@ Continue Power BI POC build:
 - COVID report Page 1 refreshed with top header bar, left audit rail, and POC trust-state badge.
 - `pbir validate Power BI\Covid POC.Report --fields --qa` passes; only intentional compositing overlap warnings remain.
 - Note: `docs/report-preview-executive-overview.svg` remains untracked from the previous static preview and was not staged.
+
+## Landing Page Refinement - 2026-05-13
+
+- Landing page now uses 120px sidebar, page navigator, detail button, compact KPI cards, sparkline companions, and data-through card.
+- Added `Data Point Tooltip` and `Compliance Detail` support pages.
+- Added semantic measures: `Data Through Date`, `Average Fatality Ratio`.
+- Design rule added to local skill: avoid page/visual scrollbars on executive landing pages; move dense content to tooltip/drillthrough/detail pages.
+- Structural validation with fields passes. QA warnings remain for intentional compositing and compact cards.

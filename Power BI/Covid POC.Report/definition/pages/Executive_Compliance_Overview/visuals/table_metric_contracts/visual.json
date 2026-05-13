@@ -18,7 +18,7 @@
                   "Property": "metric_name"
                 }
               },
-              "nativeQueryRef": "metric_name"
+              "nativeQueryRef": "Metric"
             },
             {
               "queryRef": "semantic vw_metric_contracts.grain",
@@ -32,7 +32,7 @@
                   "Property": "grain"
                 }
               },
-              "nativeQueryRef": "grain"
+              "nativeQueryRef": "Grain"
             },
             {
               "queryRef": "semantic vw_metric_contracts.certification_state",
@@ -46,7 +46,7 @@
                   "Property": "certification_state"
                 }
               },
-              "nativeQueryRef": "certification_state"
+              "nativeQueryRef": "State"
             }
           ]
         }
@@ -68,7 +68,7 @@
             "text": {
               "expr": {
                 "Literal": {
-                  "Value": "'Metric Contracts'"
+                  "Value": "'Metric contracts behind the headline'"
                 }
               }
             }
@@ -150,7 +150,7 @@
             "radius": {
               "expr": {
                 "Literal": {
-                  "Value": "14L"
+                  "Value": "12L"
                 }
               }
             }
@@ -163,7 +163,7 @@
             "show": {
               "expr": {
                 "Literal": {
-                  "Value": "true"
+                  "Value": "false"
                 }
               }
             }
@@ -176,7 +176,7 @@
     "x": 824,
     "y": 500,
     "width": 424,
-    "height": 200,
+    "height": 118,
     "z": 220,
     "tabOrder": 220
   },

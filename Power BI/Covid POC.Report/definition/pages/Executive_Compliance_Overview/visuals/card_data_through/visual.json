@@ -1,5 +1,5 @@
 {
-  "name": "card_trust_gate_rows",
+  "name": "card_data_through",
   "visual": {
     "visualType": "card",
     "query": {
@@ -7,21 +7,39 @@
         "Values": {
           "projections": [
             {
-              "queryRef": "semantic vw_trust_gate_status.Rows Under Trust Gates",
+              "queryRef": "semantic vw_powerbi_poc_dataset.Data Through Date",
               "field": {
                 "Measure": {
                   "Expression": {
                     "SourceRef": {
-                      "Entity": "semantic vw_trust_gate_status"
+                      "Entity": "semantic vw_powerbi_poc_dataset"
                     }
                   },
-                  "Property": "Rows Under Trust Gates"
+                  "Property": "Data Through Date"
                 }
               },
-              "nativeQueryRef": "Rows Under Trust Gates"
+              "nativeQueryRef": "Data Through Date"
             }
           ]
         }
+      },
+      "sortDefinition": {
+        "sort": [
+          {
+            "field": {
+              "Measure": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "semantic vw_powerbi_poc_dataset"
+                  }
+                },
+                "Property": "Data Through Date"
+              }
+            },
+            "direction": "Descending"
+          }
+        ],
+        "isDefaultSort": true
       }
     },
     "objects": {},
@@ -40,7 +58,7 @@
             "text": {
               "expr": {
                 "Literal": {
-                  "Value": "'Can executives trust this view?'"
+                  "Value": "'Data current through'"
                 }
               }
             }
@@ -145,11 +163,11 @@
     }
   },
   "position": {
-    "x": 964,
-    "y": 112,
-    "width": 284,
-    "height": 82,
+    "x": 824,
+    "y": 628,
     "z": 220,
+    "width": 424,
+    "height": 68,
     "tabOrder": 220
   },
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.7.0/schema.json"

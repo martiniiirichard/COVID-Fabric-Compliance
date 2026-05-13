@@ -142,6 +142,16 @@ table 'semantic vw_powerbi_poc_dataset'
 		displayFolder: Executive POC
 		lineageTag: 4d7f0c27-e493-4f75-861b-91961dc168b3
 
+	measure 'Data Through Date' = MAX ( 'semantic vw_powerbi_poc_dataset'[Date] )
+		formatString: Long Date
+		displayFolder: Executive POC
+		lineageTag: 16032c2f-961d-4b6d-98e1-df2d0b2ff5e3
+
+	measure 'Average Fatality Ratio' = AVERAGE ( 'semantic vw_powerbi_poc_dataset'[DailyFatalityRatio] )
+		formatString: 0.00%
+		displayFolder: Executive POC
+		lineageTag: 725e6244-8947-4f09-96ac-828f641dc9d6
+
 	partition 'semantic vw_powerbi_poc_dataset' = m
 		mode: import
 		source =

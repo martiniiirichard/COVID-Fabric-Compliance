@@ -18,7 +18,7 @@
                   "Property": "object_name"
                 }
               },
-              "nativeQueryRef": "object_name"
+              "nativeQueryRef": "Dataset"
             },
             {
               "queryRef": "semantic vw_trust_gate_status.trust_gate",
@@ -32,7 +32,7 @@
                   "Property": "trust_gate"
                 }
               },
-              "nativeQueryRef": "trust_gate"
+              "nativeQueryRef": "Gate"
             },
             {
               "queryRef": "semantic vw_trust_gate_status.Rows Under Trust Gates",
@@ -46,7 +46,7 @@
                   "Property": "Rows Under Trust Gates"
                 }
               },
-              "nativeQueryRef": "Rows Under Trust Gates"
+              "nativeQueryRef": "Rows"
             },
             {
               "queryRef": "semantic vw_trust_gate_status.null_datekey_rows",
@@ -60,7 +60,7 @@
                   "Property": "null_datekey_rows"
                 }
               },
-              "nativeQueryRef": "null_datekey_rows"
+              "nativeQueryRef": "Date Exceptions"
             }
           ]
         }
@@ -82,7 +82,7 @@
             "text": {
               "expr": {
                 "Literal": {
-                  "Value": "'Trust Gate Status'"
+                  "Value": "'Trust gates: what is certified vs controlled exception'"
                 }
               }
             }
@@ -164,7 +164,7 @@
             "radius": {
               "expr": {
                 "Literal": {
-                  "Value": "14L"
+                  "Value": "12L"
                 }
               }
             }
@@ -177,7 +177,7 @@
             "show": {
               "expr": {
                 "Literal": {
-                  "Value": "true"
+                  "Value": "false"
                 }
               }
             }
@@ -187,10 +187,10 @@
     }
   },
   "position": {
-    "x": 104,
+    "x": 136,
     "y": 500,
-    "width": 704,
-    "height": 200,
+    "width": 672,
+    "height": 196,
     "z": 220,
     "tabOrder": 220
   },

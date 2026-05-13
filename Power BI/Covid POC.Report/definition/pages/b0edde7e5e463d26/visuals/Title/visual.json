@@ -1,12 +1,12 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.7.0/schema.json",
-  "name": "badge_text",
+  "name": "34acb23b4f927569",
   "position": {
-    "x": 1020,
-    "y": 30,
+    "x": 18,
+    "y": 14,
+    "width": 300,
+    "height": 34,
     "z": 300,
-    "width": 200,
-    "height": 38,
     "tabOrder": 300
   },
   "visual": {
@@ -19,25 +19,12 @@
               {
                 "textRuns": [
                   {
-                    "value": "POC TRUST STATE",
-                    "textStyle": {
-                      "fontFamily": "Segoe UI",
-                      "fontSize": "9pt",
-                      "fontWeight": "600",
-                      "color": "#A9D6CF"
-                    }
-                  }
-                ]
-              },
-              {
-                "textRuns": [
-                  {
-                    "value": "Evidence-backed",
+                    "value": "Signal at hover point",
                     "textStyle": {
                       "fontFamily": "Segoe UI Semibold",
-                      "fontSize": "14pt",
+                      "fontSize": "15pt",
                       "fontWeight": "700",
-                      "color": "#FFFFFF"
+                      "color": "#203634"
                     }
                   }
                 ]
