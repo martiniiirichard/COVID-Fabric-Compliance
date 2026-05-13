@@ -91,12 +91,12 @@
     }
   },
   "position": {
-    "x": 760,
+    "x": 816,
     "y": 504,
-    "width": 488,
+    "width": 432,
     "height": 200,
     "z": 0,
-    "tabOrder": 0
+    "tabOrder": 41
   },
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.7.0/schema.json"
 }

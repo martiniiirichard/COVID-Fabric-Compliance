@@ -105,12 +105,12 @@
     }
   },
   "position": {
-    "x": 32,
+    "x": 144,
     "y": 504,
-    "width": 704,
+    "width": 656,
     "height": 200,
     "z": 0,
-    "tabOrder": 0
+    "tabOrder": 40
   },
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.7.0/schema.json"
 }
