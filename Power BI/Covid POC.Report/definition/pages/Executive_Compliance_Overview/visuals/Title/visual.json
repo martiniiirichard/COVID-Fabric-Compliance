@@ -2,12 +2,11 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.7.0/schema.json",
   "name": "98eef6f47c42b878",
   "position": {
-    "x": 144,
-    "y": 16,
-    "width": 500,
-    "height": 38,
-    "z": 300,
-    "tabOrder": 300
+    "x": 20,
+    "y": 20,
+    "width": 760,
+    "height": 65,
+    "z": 0
   },
   "visual": {
     "visualType": "textbox",
@@ -19,12 +18,9 @@
               {
                 "textRuns": [
                   {
-                    "value": "COVID Control Room",
+                    "value": "COVID Compliance Analytics POC",
                     "textStyle": {
-                      "fontFamily": "Segoe UI Semibold",
-                      "fontSize": "21pt",
-                      "fontWeight": "700",
-                      "color": "#FFFFFF"
+                      "fontSize": "24pt"
                     }
                   }
                 ]

@@ -82,3 +82,10 @@ Continue Power BI POC build:
 - Top-right KPI now answers the peak-case-date question via `Peak New Confirmed Date`, with `Peak New Confirmed` also available for follow-on design.
 - Latest validation: `pbir validate Power BI\Covid POC.Report --fields` passed; `--qa` passed with expected compact-card/compositing warnings.
 - Keep ignoring/staging separately: `docs/report-preview-executive-overview.svg` remains untracked and unrelated to this report edit.
+
+## Power BI Baseline Reset - 2026-05-13
+
+- Report/model artifacts under `Power BI/` restored to commit `a1853e1`, the first executive report build.
+- Stray `docs/report-preview-executive-overview.svg` removed.
+- Current report state validates with `pbir validate Power BI\Covid POC.Report --fields`: 1 page, 10 visuals, 15 fields.
+- Next workflow rule: one Power BI design change per iteration, validate after each, then ask/confirm before next visual-design change.

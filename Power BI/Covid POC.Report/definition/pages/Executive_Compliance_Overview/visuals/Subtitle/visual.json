@@ -2,12 +2,11 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.7.0/schema.json",
   "name": "c21d4d4ec610d001",
   "position": {
-    "x": 146,
-    "y": 57,
-    "width": 620,
-    "height": 26,
-    "z": 300,
-    "tabOrder": 301
+    "x": 20,
+    "y": 86,
+    "width": 980,
+    "height": 28,
+    "z": 0
   },
   "visual": {
     "visualType": "textbox",
@@ -19,11 +18,10 @@
               {
                 "textRuns": [
                   {
-                    "value": "Validated spread, severity, capacity, and peak-case signal.",
+                    "value": "Executive signal view with visible trust gates, semantic contracts, and validation evidence.",
                     "textStyle": {
-                      "fontFamily": "Segoe UI",
-                      "fontSize": "10pt",
-                      "color": "#C9D8D4"
+                      "fontSize": "14pt",
+                      "color": "#666666"
                     }
                   }
                 ]

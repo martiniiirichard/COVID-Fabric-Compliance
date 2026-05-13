@@ -1,13 +1,31 @@
 {
-  "name": "card_total_new_confirmed",
+  "name": "bar_hospital_pressure",
   "visual": {
-    "visualType": "card",
+    "visualType": "clusteredBarChart",
     "query": {
       "queryState": {
-        "Values": {
+        "Category": {
           "projections": [
             {
-              "queryRef": "semantic vw_powerbi_poc_dataset.Total New Confirmed",
+              "queryRef": "semantic vw_powerbi_poc_dataset.HospitalPressureBand",
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "semantic vw_powerbi_poc_dataset"
+                    }
+                  },
+                  "Property": "HospitalPressureBand"
+                }
+              },
+              "nativeQueryRef": "HospitalPressureBand"
+            }
+          ]
+        },
+        "Y": {
+          "projections": [
+            {
+              "queryRef": "semantic vw_powerbi_poc_dataset.Current Hospitalized Total",
               "field": {
                 "Measure": {
                   "Expression": {
@@ -15,10 +33,10 @@
                       "Entity": "semantic vw_powerbi_poc_dataset"
                     }
                   },
-                  "Property": "Total New Confirmed"
+                  "Property": "Current Hospitalized Total"
                 }
               },
-              "nativeQueryRef": "Total New Confirmed"
+              "nativeQueryRef": "Current Hospitalized Total"
             }
           ]
         }
@@ -40,7 +58,7 @@
             "text": {
               "expr": {
                 "Literal": {
-                  "Value": "'Total New Confirmed'"
+                  "Value": "'Hospital Pressure Band'"
                 }
               }
             }
@@ -63,10 +81,10 @@
     }
   },
   "position": {
-    "x": 32,
-    "y": 116,
-    "width": 280,
-    "height": 140,
+    "x": 856,
+    "y": 280,
+    "width": 392,
+    "height": 200,
     "z": 0,
     "tabOrder": 0
   },

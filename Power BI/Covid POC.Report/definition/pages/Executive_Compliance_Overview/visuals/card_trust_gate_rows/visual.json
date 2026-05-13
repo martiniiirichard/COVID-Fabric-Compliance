@@ -7,18 +7,18 @@
         "Values": {
           "projections": [
             {
-              "queryRef": "semantic vw_powerbi_poc_dataset.Peak New Confirmed Date",
+              "queryRef": "semantic vw_trust_gate_status.Rows Under Trust Gates",
               "field": {
                 "Measure": {
                   "Expression": {
                     "SourceRef": {
-                      "Entity": "semantic vw_powerbi_poc_dataset"
+                      "Entity": "semantic vw_trust_gate_status"
                     }
                   },
-                  "Property": "Peak New Confirmed Date"
+                  "Property": "Rows Under Trust Gates"
                 }
               },
-              "nativeQueryRef": "Peak New Confirmed Date"
+              "nativeQueryRef": "Rows Under Trust Gates"
             }
           ]
         }
@@ -40,7 +40,7 @@
             "text": {
               "expr": {
                 "Literal": {
-                  "Value": "'Peak new-case day'"
+                  "Value": "'Rows Under Trust Gates'"
                 }
               }
             }
@@ -59,98 +59,16 @@
             }
           }
         }
-      ],
-      "background": [
-        {
-          "properties": {
-            "show": {
-              "expr": {
-                "Literal": {
-                  "Value": "true"
-                }
-              }
-            },
-            "color": {
-              "solid": {
-                "color": {
-                  "expr": {
-                    "Literal": {
-                      "Value": "'#FFFFFF'"
-                    }
-                  }
-                }
-              }
-            },
-            "transparency": {
-              "expr": {
-                "Literal": {
-                  "Value": "0D"
-                }
-              }
-            }
-          }
-        }
-      ],
-      "border": [
-        {
-          "properties": {
-            "show": {
-              "expr": {
-                "Literal": {
-                  "Value": "true"
-                }
-              }
-            },
-            "color": {
-              "solid": {
-                "color": {
-                  "expr": {
-                    "Literal": {
-                      "Value": "'#D7E3DF'"
-                    }
-                  }
-                }
-              }
-            },
-            "width": {
-              "expr": {
-                "Literal": {
-                  "Value": "1L"
-                }
-              }
-            },
-            "radius": {
-              "expr": {
-                "Literal": {
-                  "Value": "10L"
-                }
-              }
-            }
-          }
-        }
-      ],
-      "dropShadow": [
-        {
-          "properties": {
-            "show": {
-              "expr": {
-                "Literal": {
-                  "Value": "false"
-                }
-              }
-            }
-          }
-        }
       ]
     }
   },
   "position": {
-    "x": 964,
+    "x": 920,
     "y": 116,
-    "width": 284,
-    "height": 88,
-    "z": 220,
-    "tabOrder": 223
+    "width": 328,
+    "height": 140,
+    "z": 0,
+    "tabOrder": 0
   },
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.7.0/schema.json"
 }

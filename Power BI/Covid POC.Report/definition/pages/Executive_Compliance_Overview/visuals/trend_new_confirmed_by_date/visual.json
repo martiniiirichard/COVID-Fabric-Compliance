@@ -1,10 +1,28 @@
 {
-  "name": "card_total_new_confirmed",
+  "name": "trend_new_confirmed_by_date",
   "visual": {
-    "visualType": "card",
+    "visualType": "lineChart",
     "query": {
       "queryState": {
-        "Values": {
+        "Category": {
+          "projections": [
+            {
+              "queryRef": "semantic vw_powerbi_poc_dataset.Date",
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "semantic vw_powerbi_poc_dataset"
+                    }
+                  },
+                  "Property": "Date"
+                }
+              },
+              "nativeQueryRef": "Date"
+            }
+          ]
+        },
+        "Y": {
           "projections": [
             {
               "queryRef": "semantic vw_powerbi_poc_dataset.Total New Confirmed",
@@ -40,7 +58,7 @@
             "text": {
               "expr": {
                 "Literal": {
-                  "Value": "'Total New Confirmed'"
+                  "Value": "'New Confirmed Trend'"
                 }
               }
             }
@@ -64,9 +82,9 @@
   },
   "position": {
     "x": 32,
-    "y": 116,
-    "width": 280,
-    "height": 140,
+    "y": 280,
+    "width": 800,
+    "height": 200,
     "z": 0,
     "tabOrder": 0
   },
