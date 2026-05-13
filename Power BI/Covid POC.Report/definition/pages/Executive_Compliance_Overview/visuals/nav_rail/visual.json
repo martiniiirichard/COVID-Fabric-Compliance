@@ -1,12 +1,12 @@
 {
-  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.7.0/schema.json",
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.8.0/schema.json",
   "name": "sidebar_nav_rail",
   "position": {
     "x": 0,
     "y": 96,
-    "width": 112,
+    "z": 2000,
     "height": 624,
-    "z": 0,
+    "width": 112,
     "tabOrder": 10
   },
   "visual": {
@@ -79,17 +79,6 @@
               "expr": {
                 "Literal": {
                   "Value": "false"
-                }
-              }
-            },
-            "color": {
-              "solid": {
-                "color": {
-                  "expr": {
-                    "Literal": {
-                      "Value": "'#FFFFFF'"
-                    }
-                  }
                 }
               }
             },

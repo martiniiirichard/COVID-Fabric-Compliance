@@ -1,5 +1,14 @@
 {
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.8.0/schema.json",
   "name": "card_trust_gate_rows",
+  "position": {
+    "x": 984,
+    "y": 116,
+    "z": 6000,
+    "height": 140,
+    "width": 264,
+    "tabOrder": 23
+  },
   "visual": {
     "visualType": "card",
     "query": {
@@ -7,7 +16,6 @@
         "Values": {
           "projections": [
             {
-              "queryRef": "semantic vw_trust_gate_status.Rows Under Trust Gates",
               "field": {
                 "Measure": {
                   "Expression": {
@@ -18,14 +26,13 @@
                   "Property": "Rows Under Trust Gates"
                 }
               },
+              "queryRef": "semantic vw_trust_gate_status.Rows Under Trust Gates",
               "nativeQueryRef": "Rows Under Trust Gates"
             }
           ]
         }
       }
     },
-    "objects": {},
-    "drillFilterOtherVisuals": true,
     "visualContainerObjects": {
       "title": [
         {
@@ -60,15 +67,7 @@
           }
         }
       ]
-    }
-  },
-  "position": {
-    "x": 984,
-    "y": 116,
-    "width": 264,
-    "height": 140,
-    "z": 0,
-    "tabOrder": 23
-  },
-  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.7.0/schema.json"
+    },
+    "drillFilterOtherVisuals": true
+  }
 }

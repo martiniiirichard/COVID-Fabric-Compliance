@@ -1,6 +1,11 @@
 table 'semantic vw_trust_gate_status'
 	lineageTag: 0a5e767a-2aca-442b-a7b8-f7ef47f6376a
 
+	measure 'Rows Under Trust Gates' = SUM ( 'semantic vw_trust_gate_status'[row_count] )
+		formatString: #,##0
+		displayFolder: Executive POC
+		lineageTag: 0db6a27a-60d0-4c11-81b9-dcce65b3a737
+
 	column object_name
 		dataType: string
 		lineageTag: 1baf3b25-8934-45a2-a7a5-d76b1bcd5a4f
@@ -51,11 +56,6 @@ table 'semantic vw_trust_gate_status'
 		sourceColumn: trust_gate_reason
 
 		annotation SummarizationSetBy = Automatic
-
-	measure 'Rows Under Trust Gates' = SUM ( 'semantic vw_trust_gate_status'[row_count] )
-		formatString: #,##0
-		displayFolder: Executive POC
-		lineageTag: 0db6a27a-60d0-4c11-81b9-dcce65b3a737
 
 	partition 'semantic vw_trust_gate_status' = m
 		mode: import

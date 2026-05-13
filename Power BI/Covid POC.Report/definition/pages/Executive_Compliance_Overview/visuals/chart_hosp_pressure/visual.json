@@ -1,5 +1,14 @@
 {
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.8.0/schema.json",
   "name": "bar_hospital_pressure",
+  "position": {
+    "x": 864,
+    "y": 280,
+    "z": 0,
+    "height": 200,
+    "width": 384,
+    "tabOrder": 31
+  },
   "visual": {
     "visualType": "clusteredBarChart",
     "query": {
@@ -7,7 +16,6 @@
         "Category": {
           "projections": [
             {
-              "queryRef": "semantic vw_powerbi_poc_dataset.HospitalPressureBand",
               "field": {
                 "Column": {
                   "Expression": {
@@ -18,14 +26,15 @@
                   "Property": "HospitalPressureBand"
                 }
               },
-              "nativeQueryRef": "HospitalPressureBand"
+              "queryRef": "semantic vw_powerbi_poc_dataset.HospitalPressureBand",
+              "nativeQueryRef": "HospitalPressureBand",
+              "active": true
             }
           ]
         },
         "Y": {
           "projections": [
             {
-              "queryRef": "semantic vw_powerbi_poc_dataset.Current Hospitalized Total",
               "field": {
                 "Measure": {
                   "Expression": {
@@ -36,14 +45,13 @@
                   "Property": "Current Hospitalized Total"
                 }
               },
+              "queryRef": "semantic vw_powerbi_poc_dataset.Current Hospitalized Total",
               "nativeQueryRef": "Current Hospitalized Total"
             }
           ]
         }
       }
     },
-    "objects": {},
-    "drillFilterOtherVisuals": true,
     "visualContainerObjects": {
       "title": [
         {
@@ -78,15 +86,39 @@
           }
         }
       ]
-    }
+    },
+    "drillFilterOtherVisuals": true
   },
-  "position": {
-    "x": 864,
-    "y": 280,
-    "width": 384,
-    "height": 200,
-    "z": 0,
-    "tabOrder": 31
-  },
-  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.7.0/schema.json"
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "e8a511746ccde320e440",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "semantic vw_powerbi_poc_dataset"
+              }
+            },
+            "Property": "HospitalPressureBand"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "2b0f0caad4a691e0e01c",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "semantic vw_powerbi_poc_dataset"
+              }
+            },
+            "Property": "Current Hospitalized Total"
+          }
+        },
+        "type": "Advanced"
+      }
+    ]
+  }
 }

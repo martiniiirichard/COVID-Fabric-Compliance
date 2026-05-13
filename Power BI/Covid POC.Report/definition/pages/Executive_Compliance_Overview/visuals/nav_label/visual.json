@@ -1,12 +1,12 @@
 {
-  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.7.0/schema.json",
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.8.0/schema.json",
   "name": "sidebar_nav_label",
   "position": {
     "x": 28,
     "y": 124,
-    "width": 56,
+    "z": 10000,
     "height": 28,
-    "z": 300,
+    "width": 56,
     "tabOrder": 11
   },
   "visual": {

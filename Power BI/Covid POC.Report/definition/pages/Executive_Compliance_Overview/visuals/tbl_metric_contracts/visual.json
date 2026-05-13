@@ -1,5 +1,14 @@
 {
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.8.0/schema.json",
   "name": "table_metric_contracts",
+  "position": {
+    "x": 816,
+    "y": 504,
+    "z": 7000,
+    "height": 200,
+    "width": 432,
+    "tabOrder": 41
+  },
   "visual": {
     "visualType": "tableEx",
     "query": {
@@ -7,7 +16,6 @@
         "Values": {
           "projections": [
             {
-              "queryRef": "semantic vw_metric_contracts.metric_name",
               "field": {
                 "Column": {
                   "Expression": {
@@ -18,10 +26,10 @@
                   "Property": "metric_name"
                 }
               },
+              "queryRef": "semantic vw_metric_contracts.metric_name",
               "nativeQueryRef": "metric_name"
             },
             {
-              "queryRef": "semantic vw_metric_contracts.grain",
               "field": {
                 "Column": {
                   "Expression": {
@@ -32,10 +40,10 @@
                   "Property": "grain"
                 }
               },
+              "queryRef": "semantic vw_metric_contracts.grain",
               "nativeQueryRef": "grain"
             },
             {
-              "queryRef": "semantic vw_metric_contracts.certification_state",
               "field": {
                 "Column": {
                   "Expression": {
@@ -46,14 +54,13 @@
                   "Property": "certification_state"
                 }
               },
+              "queryRef": "semantic vw_metric_contracts.certification_state",
               "nativeQueryRef": "certification_state"
             }
           ]
         }
       }
     },
-    "objects": {},
-    "drillFilterOtherVisuals": true,
     "visualContainerObjects": {
       "title": [
         {
@@ -88,15 +95,53 @@
           }
         }
       ]
-    }
+    },
+    "drillFilterOtherVisuals": true
   },
-  "position": {
-    "x": 816,
-    "y": 504,
-    "width": 432,
-    "height": 200,
-    "z": 0,
-    "tabOrder": 41
-  },
-  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.7.0/schema.json"
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "b4734995215cf65a5a0c",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "semantic vw_metric_contracts"
+              }
+            },
+            "Property": "metric_name"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "8acd9e23268657948a3a",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "semantic vw_metric_contracts"
+              }
+            },
+            "Property": "grain"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "7af159b23890fd5cb16a",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "semantic vw_metric_contracts"
+              }
+            },
+            "Property": "certification_state"
+          }
+        },
+        "type": "Categorical"
+      }
+    ]
+  }
 }

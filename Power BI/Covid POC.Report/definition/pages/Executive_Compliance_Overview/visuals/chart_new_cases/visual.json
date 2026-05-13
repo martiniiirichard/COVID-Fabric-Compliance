@@ -1,5 +1,14 @@
 {
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.8.0/schema.json",
   "name": "trend_new_confirmed_by_date",
+  "position": {
+    "x": 144,
+    "y": 280,
+    "z": 1000,
+    "height": 200,
+    "width": 704,
+    "tabOrder": 30
+  },
   "visual": {
     "visualType": "lineChart",
     "query": {
@@ -7,7 +16,6 @@
         "Category": {
           "projections": [
             {
-              "queryRef": "semantic vw_powerbi_poc_dataset.Date",
               "field": {
                 "Column": {
                   "Expression": {
@@ -18,14 +26,15 @@
                   "Property": "Date"
                 }
               },
-              "nativeQueryRef": "Date"
+              "queryRef": "semantic vw_powerbi_poc_dataset.Date",
+              "nativeQueryRef": "Date",
+              "active": true
             }
           ]
         },
         "Y": {
           "projections": [
             {
-              "queryRef": "semantic vw_powerbi_poc_dataset.Total New Confirmed",
               "field": {
                 "Measure": {
                   "Expression": {
@@ -36,14 +45,13 @@
                   "Property": "Total New Confirmed"
                 }
               },
+              "queryRef": "semantic vw_powerbi_poc_dataset.Total New Confirmed",
               "nativeQueryRef": "Total New Confirmed"
             }
           ]
         }
       }
     },
-    "objects": {},
-    "drillFilterOtherVisuals": true,
     "visualContainerObjects": {
       "title": [
         {
@@ -78,15 +86,7 @@
           }
         }
       ]
-    }
-  },
-  "position": {
-    "x": 144,
-    "y": 280,
-    "width": 704,
-    "height": 200,
-    "z": 0,
-    "tabOrder": 30
-  },
-  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.7.0/schema.json"
+    },
+    "drillFilterOtherVisuals": true
+  }
 }

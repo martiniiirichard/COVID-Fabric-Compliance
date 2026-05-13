@@ -1,0 +1,31 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.8.0/schema.json",
+  "name": "663bb790bc2ba56212f5",
+  "position": {
+    "x": 0,
+    "y": 0,
+    "z": 11000,
+    "height": 96,
+    "width": 1280,
+    "tabOrder": 42
+  },
+  "visualGroup": {
+    "displayName": "Header Bar",
+    "groupMode": "ScaleMode",
+    "objects": {
+      "background": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

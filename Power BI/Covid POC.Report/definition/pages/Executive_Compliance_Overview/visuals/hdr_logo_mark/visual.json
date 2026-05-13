@@ -1,12 +1,12 @@
 {
-  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.7.0/schema.json",
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.8.0/schema.json",
   "name": "header_logo_mark",
   "position": {
     "x": 28,
     "y": 22,
-    "z": 10,
-    "width": 52,
+    "z": 9000,
     "height": 52,
+    "width": 52,
     "tabOrder": 1
   },
   "visual": {
@@ -79,17 +79,6 @@
               "expr": {
                 "Literal": {
                   "Value": "true"
-                }
-              }
-            },
-            "color": {
-              "solid": {
-                "color": {
-                  "expr": {
-                    "Literal": {
-                      "Value": "'#7FD1C7'"
-                    }
-                  }
                 }
               }
             },

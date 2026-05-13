@@ -1,5 +1,14 @@
 {
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.8.0/schema.json",
   "name": "card_total_new_deceased",
+  "position": {
+    "x": 424,
+    "y": 116,
+    "z": 5000,
+    "height": 140,
+    "width": 264,
+    "tabOrder": 21
+  },
   "visual": {
     "visualType": "card",
     "query": {
@@ -7,7 +16,6 @@
         "Values": {
           "projections": [
             {
-              "queryRef": "semantic vw_powerbi_poc_dataset.Total New Deceased",
               "field": {
                 "Measure": {
                   "Expression": {
@@ -18,14 +26,13 @@
                   "Property": "Total New Deceased"
                 }
               },
+              "queryRef": "semantic vw_powerbi_poc_dataset.Total New Deceased",
               "nativeQueryRef": "Total New Deceased"
             }
           ]
         }
       }
     },
-    "objects": {},
-    "drillFilterOtherVisuals": true,
     "visualContainerObjects": {
       "title": [
         {
@@ -60,15 +67,7 @@
           }
         }
       ]
-    }
-  },
-  "position": {
-    "x": 424,
-    "y": 116,
-    "width": 264,
-    "height": 140,
-    "z": 0,
-    "tabOrder": 21
-  },
-  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.7.0/schema.json"
+    },
+    "drillFilterOtherVisuals": true
+  }
 }
