@@ -44,6 +44,13 @@
                   "Value": "false"
                 }
               }
+            },
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Nav Label'"
+                }
+              }
             }
           }
         }
@@ -76,5 +83,6 @@
       ]
     },
     "drillFilterOtherVisuals": true
-  }
+  },
+  "parentGroupName": "grp_sidebar"
 }

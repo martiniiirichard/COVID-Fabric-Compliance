@@ -16,6 +16,11 @@ table 'semantic vw_powerbi_poc_dataset'
 		displayFolder: Executive POC
 		lineageTag: 4d7f0c27-e493-4f75-861b-91961dc168b3
 
+	measure 'Data Through Date' = MAX ( 'semantic vw_powerbi_poc_dataset'[Date] )
+		formatString: Short Date
+		displayFolder: Executive POC
+		lineageTag: 16032c2f-961d-4b6d-98e1-df2d0b2ff5e3
+
 	column DateKey
 		dataType: int64
 		formatString: 0
