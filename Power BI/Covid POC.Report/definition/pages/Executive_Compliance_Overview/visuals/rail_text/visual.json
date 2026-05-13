@@ -1,13 +1,13 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.7.0/schema.json",
-  "name": "c21d4d4ec610d001",
+  "name": "rail_text",
   "position": {
-    "x": 114,
-    "y": 60,
-    "width": 820,
-    "height": 28,
+    "x": 16,
+    "y": 120,
     "z": 300,
-    "tabOrder": 301
+    "width": 56,
+    "height": 120,
+    "tabOrder": 300
   },
   "visual": {
     "visualType": "textbox",
@@ -19,11 +19,38 @@
               {
                 "textRuns": [
                   {
-                    "value": "Executive signal view with visible trust gates, semantic contracts, and validation evidence.",
+                    "value": "COVID",
+                    "textStyle": {
+                      "fontFamily": "Segoe UI Semibold",
+                      "fontSize": "15pt",
+                      "fontWeight": "700",
+                      "color": "#FFFFFF"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "POC",
                     "textStyle": {
                       "fontFamily": "Segoe UI",
                       "fontSize": "12pt",
-                      "color": "#C9D8D4"
+                      "fontWeight": "600",
+                      "color": "#A9D6CF"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "AUDIT",
+                    "textStyle": {
+                      "fontFamily": "Segoe UI",
+                      "fontSize": "10pt",
+                      "fontWeight": "600",
+                      "color": "#D9EDE7"
                     }
                   }
                 ]

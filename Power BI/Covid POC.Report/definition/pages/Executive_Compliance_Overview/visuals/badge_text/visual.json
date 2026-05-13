@@ -1,13 +1,13 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.7.0/schema.json",
-  "name": "c21d4d4ec610d001",
+  "name": "badge_text",
   "position": {
-    "x": 114,
-    "y": 60,
-    "width": 820,
-    "height": 28,
+    "x": 1002,
+    "y": 30,
     "z": 300,
-    "tabOrder": 301
+    "width": 226,
+    "height": 38,
+    "tabOrder": 300
   },
   "visual": {
     "visualType": "textbox",
@@ -19,11 +19,25 @@
               {
                 "textRuns": [
                   {
-                    "value": "Executive signal view with visible trust gates, semantic contracts, and validation evidence.",
+                    "value": "POC TRUST STATE",
                     "textStyle": {
                       "fontFamily": "Segoe UI",
-                      "fontSize": "12pt",
-                      "color": "#C9D8D4"
+                      "fontSize": "9pt",
+                      "fontWeight": "600",
+                      "color": "#A9D6CF"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Validated Semantic Evidence",
+                    "textStyle": {
+                      "fontFamily": "Segoe UI Semibold",
+                      "fontSize": "13pt",
+                      "fontWeight": "600",
+                      "color": "#FFFFFF"
                     }
                   }
                 ]

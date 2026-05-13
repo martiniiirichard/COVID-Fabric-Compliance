@@ -56,3 +56,11 @@ Continue Power BI POC build:
 - Latest validation passed with no warnings.
 - Added explicit measures in TMDL for report visuals.
 - Next recommended page: `Data Trust & Audit`.
+
+## 2026-05-13 Design Refresh State
+
+- Expanded Power BI design sample library reviewed from `C:\Users\marti\OneDrive\Desktop\PBI Design Files`.
+- Local design skills updated with executive POC design doctrine and sample-library findings.
+- COVID report Page 1 refreshed with top header bar, left audit rail, and POC trust-state badge.
+- `pbir validate Power BI\Covid POC.Report --fields --qa` passes; only intentional compositing overlap warnings remain.
+- Note: `docs/report-preview-executive-overview.svg` remains untracked from the previous static preview and was not staged.
