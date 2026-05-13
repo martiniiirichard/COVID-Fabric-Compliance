@@ -40,7 +40,7 @@
             "text": {
               "expr": {
                 "Literal": {
-                  "Value": "'Is spread accelerating?'"
+                  "Value": "'Spread pulse'"
                 }
               }
             }
@@ -122,7 +122,7 @@
             "radius": {
               "expr": {
                 "Literal": {
-                  "Value": "12L"
+                  "Value": "10L"
                 }
               }
             }
@@ -146,9 +146,9 @@
   },
   "position": {
     "x": 136,
-    "y": 112,
+    "y": 116,
     "width": 260,
-    "height": 82,
+    "height": 88,
     "z": 220,
     "tabOrder": 220
   },

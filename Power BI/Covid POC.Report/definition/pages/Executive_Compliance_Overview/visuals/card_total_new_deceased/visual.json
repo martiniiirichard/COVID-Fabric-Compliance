@@ -40,7 +40,7 @@
             "text": {
               "expr": {
                 "Literal": {
-                  "Value": "'Is severity rising?'"
+                  "Value": "'Severity pulse'"
                 }
               }
             }
@@ -122,7 +122,7 @@
             "radius": {
               "expr": {
                 "Literal": {
-                  "Value": "12L"
+                  "Value": "10L"
                 }
               }
             }
@@ -146,11 +146,11 @@
   },
   "position": {
     "x": 412,
-    "y": 112,
+    "y": 116,
     "width": 260,
-    "height": 82,
+    "height": 88,
     "z": 220,
-    "tabOrder": 220
+    "tabOrder": 221
   },
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.7.0/schema.json"
 }

@@ -4,10 +4,10 @@
   "position": {
     "x": 18,
     "y": 118,
-    "z": 300,
     "width": 86,
-    "height": 92,
-    "tabOrder": 300
+    "height": 72,
+    "z": 300,
+    "tabOrder": 303
   },
   "visual": {
     "visualType": "textbox",
@@ -19,12 +19,12 @@
               {
                 "textRuns": [
                   {
-                    "value": "COVID",
+                    "value": "EXEC\nPOC",
                     "textStyle": {
                       "fontFamily": "Segoe UI Semibold",
-                      "fontSize": "15pt",
+                      "fontSize": "18pt",
                       "fontWeight": "700",
-                      "color": "#FFFFFF"
+                      "color": "#D9EDE7"
                     }
                   }
                 ]
@@ -32,10 +32,10 @@
               {
                 "textRuns": [
                   {
-                    "value": "COMMAND",
+                    "value": "Control",
                     "textStyle": {
                       "fontFamily": "Segoe UI",
-                      "fontSize": "9pt",
+                      "fontSize": "10pt",
                       "fontWeight": "600",
                       "color": "#A9D6CF"
                     }
@@ -45,12 +45,12 @@
               {
                 "textRuns": [
                   {
-                    "value": "Trust",
+                    "value": "Room",
                     "textStyle": {
                       "fontFamily": "Segoe UI",
-                      "fontSize": "12pt",
+                      "fontSize": "10pt",
                       "fontWeight": "600",
-                      "color": "#D9EDE7"
+                      "color": "#A9D6CF"
                     }
                   }
                 ]

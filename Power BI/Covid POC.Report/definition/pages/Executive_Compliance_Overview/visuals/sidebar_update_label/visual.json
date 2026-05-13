@@ -1,13 +1,13 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.7.0/schema.json",
-  "name": "98eef6f47c42b878",
+  "name": "sidebar_update_label",
   "position": {
-    "x": 144,
-    "y": 16,
-    "width": 500,
-    "height": 38,
+    "x": 14,
+    "y": 610,
+    "width": 92,
+    "height": 22,
     "z": 300,
-    "tabOrder": 300
+    "tabOrder": 305
   },
   "visual": {
     "visualType": "textbox",
@@ -19,12 +19,12 @@
               {
                 "textRuns": [
                   {
-                    "value": "COVID Control Room",
+                    "value": "Updated",
                     "textStyle": {
                       "fontFamily": "Segoe UI Semibold",
-                      "fontSize": "21pt",
+                      "fontSize": "9pt",
                       "fontWeight": "700",
-                      "color": "#FFFFFF"
+                      "color": "#D9EDE7"
                     }
                   }
                 ]

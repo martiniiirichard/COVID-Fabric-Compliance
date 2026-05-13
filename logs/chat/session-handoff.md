@@ -72,3 +72,13 @@ Continue Power BI POC build:
 - Added semantic measures: `Data Through Date`, `Average Fatality Ratio`.
 - Design rule added to local skill: avoid page/visual scrollbars on executive landing pages; move dense content to tooltip/drillthrough/detail pages.
 - Structural validation with fields passes. QA warnings remain for intentional compositing and compact cards.
+
+## Landing Page Correction - 2026-05-13
+
+- Current report target: `Power BI\Covid POC.pbip`.
+- Executive landing page is now KPI-only above the fold: four KPI cards plus companion sparklines, with lower landing visuals removed.
+- Hidden support pages: `Data Point Tooltip` and `Compliance Detail` use PBIR `visibility = HiddenInViewMode`.
+- Sidebar uses a compact icon marker and bottom-pinned `Data Through Date` card; no long page navigator is exposed.
+- Top-right KPI now answers the peak-case-date question via `Peak New Confirmed Date`, with `Peak New Confirmed` also available for follow-on design.
+- Latest validation: `pbir validate Power BI\Covid POC.Report --fields` passed; `--qa` passed with expected compact-card/compositing warnings.
+- Keep ignoring/staging separately: `docs/report-preview-executive-overview.svg` remains untracked and unrelated to this report edit.

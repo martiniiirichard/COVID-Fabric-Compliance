@@ -1,13 +1,13 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.7.0/schema.json",
-  "name": "98eef6f47c42b878",
+  "name": "sidebar_home_icon",
   "position": {
-    "x": 144,
-    "y": 16,
-    "width": 500,
-    "height": 38,
+    "x": 42,
+    "y": 220,
+    "width": 36,
+    "height": 36,
     "z": 300,
-    "tabOrder": 300
+    "tabOrder": 304
   },
   "visual": {
     "visualType": "textbox",
@@ -19,10 +19,10 @@
               {
                 "textRuns": [
                   {
-                    "value": "COVID Control Room",
+                    "value": "?",
                     "textStyle": {
-                      "fontFamily": "Segoe UI Semibold",
-                      "fontSize": "21pt",
+                      "fontFamily": "Segoe UI Symbol",
+                      "fontSize": "22pt",
                       "fontWeight": "700",
                       "color": "#FFFFFF"
                     }

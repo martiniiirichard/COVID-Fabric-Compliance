@@ -3,9 +3,9 @@
   "name": "c21d4d4ec610d001",
   "position": {
     "x": 146,
-    "y": 60,
-    "width": 760,
-    "height": 28,
+    "y": 57,
+    "width": 620,
+    "height": 26,
     "z": 300,
     "tabOrder": 301
   },
@@ -19,10 +19,10 @@
               {
                 "textRuns": [
                   {
-                    "value": "Spread, pressure, and trust signals for validated compliance decisions.",
+                    "value": "Validated spread, severity, capacity, and peak-case signal.",
                     "textStyle": {
                       "fontFamily": "Segoe UI",
-                      "fontSize": "12pt",
+                      "fontSize": "10pt",
                       "color": "#C9D8D4"
                     }
                   }

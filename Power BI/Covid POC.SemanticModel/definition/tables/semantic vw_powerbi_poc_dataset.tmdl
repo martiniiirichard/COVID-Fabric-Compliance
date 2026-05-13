@@ -143,7 +143,7 @@ table 'semantic vw_powerbi_poc_dataset'
 		lineageTag: 4d7f0c27-e493-4f75-861b-91961dc168b3
 
 	measure 'Data Through Date' = MAX ( 'semantic vw_powerbi_poc_dataset'[Date] )
-		formatString: Long Date
+		formatString: Short Date
 		displayFolder: Executive POC
 		lineageTag: 16032c2f-961d-4b6d-98e1-df2d0b2ff5e3
 
@@ -151,6 +151,35 @@ table 'semantic vw_powerbi_poc_dataset'
 		formatString: 0.00%
 		displayFolder: Executive POC
 		lineageTag: 725e6244-8947-4f09-96ac-828f641dc9d6
+
+	measure 'Peak New Confirmed' =
+			MAXX (
+			    VALUES ( 'semantic vw_powerbi_poc_dataset'[Date] ),
+			    [Total New Confirmed]
+			)
+		formatString: #,##0
+		displayFolder: Executive POC
+		lineageTag: d6d6894a-9d9e-4989-8b90-95d275f8691e
+
+	measure 'Peak New Confirmed Date' =
+			VAR PeakDate =
+			    MAXX (
+			        TOPN (
+			            1,
+			            ADDCOLUMNS (
+			                VALUES ( 'semantic vw_powerbi_poc_dataset'[Date] ),
+			                "@Cases", [Total New Confirmed]
+			            ),
+			            [@Cases], DESC,
+			            'semantic vw_powerbi_poc_dataset'[Date], DESC
+			        ),
+			        'semantic vw_powerbi_poc_dataset'[Date]
+			    )
+			RETURN
+			    FORMAT ( PeakDate, "mmm d, yyyy" )
+		formatString: Text
+		displayFolder: Executive POC
+		lineageTag: c9d7b3cc-36d6-49e2-9ac0-2d82413dd8df
 
 	partition 'semantic vw_powerbi_poc_dataset' = m
 		mode: import

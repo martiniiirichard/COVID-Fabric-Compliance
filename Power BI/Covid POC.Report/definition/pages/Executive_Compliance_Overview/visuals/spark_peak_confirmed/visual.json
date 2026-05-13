@@ -1,13 +1,13 @@
 {
-  "name": "bar_hospital_pressure",
+  "name": "spark_peak_confirmed",
   "visual": {
-    "visualType": "clusteredBarChart",
+    "visualType": "lineChart",
     "query": {
       "queryState": {
         "Category": {
           "projections": [
             {
-              "queryRef": "semantic vw_powerbi_poc_dataset.HospitalPressureBand",
+              "queryRef": "semantic vw_powerbi_poc_dataset.Date",
               "field": {
                 "Column": {
                   "Expression": {
@@ -15,17 +15,17 @@
                       "Entity": "semantic vw_powerbi_poc_dataset"
                     }
                   },
-                  "Property": "HospitalPressureBand"
+                  "Property": "Date"
                 }
               },
-              "nativeQueryRef": "HospitalPressureBand"
+              "nativeQueryRef": "Date"
             }
           ]
         },
         "Y": {
           "projections": [
             {
-              "queryRef": "semantic vw_powerbi_poc_dataset.Current Hospitalized Total",
+              "queryRef": "semantic vw_powerbi_poc_dataset.Total New Confirmed",
               "field": {
                 "Measure": {
                   "Expression": {
@@ -33,13 +33,31 @@
                       "Entity": "semantic vw_powerbi_poc_dataset"
                     }
                   },
-                  "Property": "Current Hospitalized Total"
+                  "Property": "Total New Confirmed"
                 }
               },
-              "nativeQueryRef": "Current Hospitalized Total"
+              "nativeQueryRef": "Total New Confirmed"
             }
           ]
         }
+      },
+      "sortDefinition": {
+        "sort": [
+          {
+            "field": {
+              "Measure": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "semantic vw_powerbi_poc_dataset"
+                  }
+                },
+                "Property": "Total New Confirmed"
+              }
+            },
+            "direction": "Descending"
+          }
+        ],
+        "isDefaultSort": true
       }
     },
     "objects": {},
@@ -51,14 +69,14 @@
             "show": {
               "expr": {
                 "Literal": {
-                  "Value": "true"
+                  "Value": "false"
                 }
               }
             },
             "text": {
               "expr": {
                 "Literal": {
-                  "Value": "'Hospital pressure concentrates where risk is highest'"
+                  "Value": "''"
                 }
               }
             }
@@ -140,7 +158,7 @@
             "radius": {
               "expr": {
                 "Literal": {
-                  "Value": "12L"
+                  "Value": "10L"
                 }
               }
             }
@@ -183,12 +201,12 @@
     }
   },
   "position": {
-    "x": 884,
-    "y": 276,
-    "width": 364,
-    "height": 198,
-    "z": 220,
-    "tabOrder": 220
+    "x": 964,
+    "y": 208,
+    "width": 284,
+    "height": 72,
+    "z": 215,
+    "tabOrder": 233
   },
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.7.0/schema.json"
 }

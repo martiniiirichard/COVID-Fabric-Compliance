@@ -69,7 +69,7 @@
             "show": {
               "expr": {
                 "Literal": {
-                  "Value": "true"
+                  "Value": "false"
                 }
               }
             },
@@ -158,7 +158,7 @@
             "radius": {
               "expr": {
                 "Literal": {
-                  "Value": "12L"
+                  "Value": "10L"
                 }
               }
             }
@@ -202,11 +202,11 @@
   },
   "position": {
     "x": 136,
-    "y": 198,
-    "z": 215,
+    "y": 208,
     "width": 260,
-    "height": 56,
-    "tabOrder": 215
+    "height": 72,
+    "z": 215,
+    "tabOrder": 230
   },
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.7.0/schema.json"
 }

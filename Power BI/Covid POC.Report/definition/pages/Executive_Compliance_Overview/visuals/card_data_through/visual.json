@@ -51,14 +51,14 @@
             "show": {
               "expr": {
                 "Literal": {
-                  "Value": "true"
+                  "Value": "false"
                 }
               }
             },
             "text": {
               "expr": {
                 "Literal": {
-                  "Value": "'Data current through'"
+                  "Value": "''"
                 }
               }
             }
@@ -93,7 +93,7 @@
                 "color": {
                   "expr": {
                     "Literal": {
-                      "Value": "'#FFFFFF'"
+                      "Value": "'#0B2D3B'"
                     }
                   }
                 }
@@ -124,7 +124,7 @@
                 "color": {
                   "expr": {
                     "Literal": {
-                      "Value": "'#D7E3DF'"
+                      "Value": "'#214A56'"
                     }
                   }
                 }
@@ -140,7 +140,7 @@
             "radius": {
               "expr": {
                 "Literal": {
-                  "Value": "12L"
+                  "Value": "8L"
                 }
               }
             }
@@ -163,12 +163,12 @@
     }
   },
   "position": {
-    "x": 824,
-    "y": 628,
-    "z": 220,
-    "width": 424,
-    "height": 68,
-    "tabOrder": 220
+    "x": 12,
+    "y": 638,
+    "width": 96,
+    "height": 56,
+    "z": 260,
+    "tabOrder": 260
   },
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.7.0/schema.json"
 }
